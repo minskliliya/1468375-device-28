@@ -1,6 +1,6 @@
 # Личный проект «Девайс»
 
-* Студент: [Лилия Ильина](https://up.htmlacademy.ru/htmlcss/28/user/1468375).
+* Студент: [Лилия Ильина](https://htmlacademy.ru/profile/id1468375).
 * Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---

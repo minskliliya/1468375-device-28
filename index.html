@@ -8,7 +8,7 @@
 
     <header>
       <p>
-        <a href="index.html">
+        <a href="index.html" aria-label="Ссылка на главную страницу">
           <img src="img/logo.png" width="164" height="36" alt="Логотип Девайс">
         </a>
       </p>
@@ -22,6 +22,14 @@
       </div>
       <nav>
         <p><a href="catalog.html">каталог товаров</a></p>  
+        <ul>  
+          <li><a href="#">Виртуальная реальность</a></li>         
+          <li><a href="#">Моноподы для селфи</a></li>
+          <li><a href="#">Экшн-камеры</a></li>
+          <li><a href="#">Фитнес-браслеты</a></li>
+          <li><a href="#">Умные часы</a></li>          
+          <li><a href="#">Квадрокоптер</a></li>
+        </ul> 
         <ul>      
           <li><a href="#">доставка</a></li>
           <li><a href="#">гаранития</a></li>
@@ -33,7 +41,7 @@
     <main>
 
       <div>
-        <h2>Основной слайдер</h2>
+        <h2 class="visually-hidden">Основной слайдер</h2>
         <div> 
           <ul>
             <li><a href="#"><img src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
@@ -103,7 +111,7 @@
       </div>  
 
       <section>
-        <h2>Популярные товары</h2>
+        <h2 class="visually-hidden">Популярные товары</h2>
         <ul>
           <li>
             <img src="img/popular-1.svg" width="160" height="160" alt="Виртуальная реальность">
@@ -133,7 +141,7 @@
       </section>
       
       <section>
-        <h2>Сервисы</h2>
+        <h2 class="visually-hidden">Сервисы</h2>
         <div>
           <ul>
             <li><a href="#">доставка</a></li>
@@ -171,7 +179,7 @@
       </section>
 
       <section>
-        <h2>Логатипы комапаний</h2>
+        <h2 class="visually-hidden">Логатипы комапаний</h2>
         <ul>
           <li><img src="img/logo-1.png" width="260" height="100" alt="Логотип DJI"></li>
           <li><img src="img/logo-2.png" width="260" height="100" alt="Логотип Gadgets"></li>
@@ -195,7 +203,7 @@
       </section>
     
       <section>
-        <h2>контакты</h2>
+        <h2 class="visually-hidden">контакты</h2>
         <p>
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы смотеже проверить работоспособность покупки.
           Всякое бывает.
@@ -208,7 +216,7 @@
     <footer>   
       <div>     
         <p>
-          <a href="index.html"><img src="img/logo-device.svg" width="164" height="36" alt="Логотип Девайс"></a>
+          <a href="index.html" aria-label="Ссылка на главную страницу"><img src="img/logo-device.svg" width="164" height="36" alt="Логотип Девайс"></a>
         </p>
         <ul>  
           <li><a href="#">Войти</a></li>         
@@ -233,9 +241,36 @@
         <li><a href="#">Инстаграм</a></li>
       </ul>
       <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-yellow.png" width="164" height="36" alt="Логотип htmlacademy"></a>
+        <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Ссылка на главную страницу htmlacademy"><img src="img/logo-html.svg" width="164" height="36" alt="Логотип htmlacademy"></a>
       </p>
     </footer>
+
+
+    <section>
+      <h2 class="visually-hidden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post" aria-label="форма обратной связи">
+        <p>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+          <label for="name">Ваше имя:</label>
+        </p>
+        <p>
+          <input id="email" type="email" name="email" placeholder="email@example.com">
+          <label for="email">Ваш e-mail</label>
+        </p>
+        <p>
+          <textarea id="text" rows="20" cols="90">В свободной форме</textarea>    
+          <label for="text">Текст  письма</label>     
+        </p>
+        <button type="submit">Отправить</button>
+      </form>  
+      <button type="button">Закрыть</button>
+    </section>
+    
+    <section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <img src="img/map-popup.png" width="994" height="594" alt="Наше местонахождение">
+      <button type="button">Закрыть</button>
+    </section>
 
   </body>
 </html>

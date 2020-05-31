@@ -3,26 +3,28 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
 
-    <header>
-      <p>
+    <header class="header">
+      <p class="logo">
         <a href="index.html">
-          <img src="img/logo.png" width="164" height="36" alt="Логотип Девайс">
+          <img src="img/logo.png" width="164" height="36" alt="Логотип Девайс" class="logo__img">
         </a>
       </p>
-      <div>
-        <a href="#">Поиск по сайту</a>
-        <ul>  
+      <div class="user-nav" >
+        <a href="#" class="search">Поиск по сайту</a>
+        <ul class="user-menu">  
           <li><a href="#">Войти</a></li>         
           <li><a href="#">Сравнить</a></li>
           <li><a href="#">Корзина</a></li>
         </ul> 
       </div>
-      <nav>
-        <p><a href="catalog.html">каталог товаров</a></p>  
-        <ul>  
+      <nav class="site-nav">
+        <p><a href="catalog.html" class="catalog">каталог товаров</a></p>  
+        <ul class="catalog__menu">  
           <li><a href="#">Виртуальная реальность</a></li>         
           <li><a href="#">Моноподы для селфи</a></li>
           <li><a href="#">Экшн-камеры</a></li>
@@ -30,7 +32,7 @@
           <li><a href="#">Умные часы</a></li>          
           <li><a href="#">Квадрокоптер</a></li>
         </ul> 
-        <ul>      
+        <ul class="site-menu">      
           <li><a href="#">доставка</a></li>
           <li><a href="#">гаранития</a></li>
           <li><a href="#">контакты</a></li>
@@ -38,11 +40,11 @@
       </nav>  
     </header>
 
-    <main>
+    <main class="container">
 
       <div>
         <h2 class="visually-hidden">Основной слайдер</h2>
-        <div> 
+        <div class="main-slider"> 
           <ul>
             <li><a href="#"><img src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
             <li><a href="#"><img src="img/slider-button.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
@@ -110,7 +112,7 @@
         </div>       
       </div>  
 
-      <section>
+      <section class="popular-goods">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul>
           <li>
@@ -140,7 +142,7 @@
         </ul>
       </section>
       
-      <section>
+      <section class="services">
         <h2 class="visually-hidden">Сервисы</h2>
         <div>
           <ul>
@@ -178,9 +180,9 @@
         </div>  
       </section>
 
-      <section>
+      <section class="companies-logo">
         <h2 class="visually-hidden">Логотипы комапаний</h2>
-        <ul>
+        <ul >
           <li><img src="img/logo-1.png" width="260" height="100" alt="Логотип DJI"></li>
           <li><img src="img/logo-2.png" width="260" height="100" alt="Логотип Gadgets"></li>
           <li><img src="img/logo-3.png" width="260" height="100" alt="Логотип GoPro"></li>
@@ -188,65 +190,64 @@
         </ul>
       </section>
 
-      <section>
-        <h2>О нас</h2>
-        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
-        <p>Мы можем доставить ваш товар в самые отдаленные точки России! <span>device</span> работает
+      <section class="about-us">
+        <h2 class="general-heading">О нас</h2>
+        <p class="general-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>
+        <p class="general-paragraph">Мы можем доставить ваш товар в самые отдаленные точки России! <span>device</span> работает
           со многими транспортными компаниями:
         </p>
-        <ul>
+        <ul class="delivery">
           <li>Деловые линии</li>
           <li>Авторейдинг</li>
           <li>ЖелДорЭкседиция</li>
         </ul>
-        <p><a href="#">подробнее о нас</a></p>
+        <p class="gerenal-link"><a href="#">подробнее о нас</a></p>
       </section>
     
-      <section>
-        <h2 class="visually-hidden">контакты</h2>
-        <p>
+      <section class="contacts">
+        <h2 class="general-heading">Контакты</h2>
+        <p class="general-paragraph">
           Вы можете забрать товар сами, заехав в наш офис. Заодно, вы смотеже проверить работоспособность покупки.
           Всякое бывает.
         </p>
-        <img src="img/map.png" width="560" height="222" alt="Наше местонахождение">
-        <p><a href="#">напишите нам</a></p>
+        <img src="img/map.png" width="560" height="222" alt="Наше местонахождение" class="contacts__img">
+        <p class="gerenal-link"><a href="#">напишите нам</a></p>
       </section>
     </main>  
 
-    <footer>   
-      <div>     
-        <p>
-          <a href="index.html"><img src="img/logo-device.svg" width="164" height="36" alt="Логотип Девайс"></a>
+    <footer class="footer">   
+      <div class="footer-nav">     
+        <p class="footer-logo">
+          <a href="index.html"><img class="logo__img" src="img/logo-yellow.png" width="164" height="36" alt="Логотип Девайс"></a>
         </p>
-        <ul>  
-          <li><a href="#">Войти</a></li>         
-          <li><a href="#">Сравнить</a></li>
-          <li><a href="#">Корзина</a></li>
+        <ul class="user-menu">  
+          <li><a class="user-menu__link_color_white" href="#">Войти</a></li>         
+          <li><a class="user-menu__link_color_white" href="#">Сравнить</a></li>
+          <li><a class="user-menu__link_color_white" href="#">Корзина</a></li>
         </ul> 
       </div>  
       
-      <div>
-        <address>г.Москваб ул.Строителей, 15</address>
-        <ul>
-          <li><a href="#">доставка</a></li>
-          <li><a href="#">гаранития</a></li>
-          <li><a href="#">контакты</a></li>
+      <div class="footer-contacts" >
+        <address class="address">г.Москваб ул.Строителей, 15</address>
+        <ul class="site-nav site-menu">
+          <li><a class="site-menu__link_color_white" href="#">доставка</a></li>
+          <li><a class="site-menu__link_color_white" href="#">гаранития</a></li>
+          <li><a class="site-menu__link_color_white" href="#">контакты</a></li>
         </ul>
-        <p><a href="tel:+74954959595">Тел.: +7(495)495-95-95</a></p>
+        <p class="phone"><a class="phone__link" href="tel:+74954959595">Тел.: +7(495)495-95-95</a></p>
       </div>
 
-      <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+      <ul class="social-media">
+        <li><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+        <li><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
       </ul>
-      <p>
+      <p class="htmlacademy">
         <a href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"><img src="img/logo-html.svg" width="164" height="36" alt="Логотип htmlacademy"></a>
       </p>
     </footer>
 
-
-    <section>
+    <section class="feedback">
       <h2 class="visually-hidden">Напишите нам</h2>
       <form action="https://echo.htmlacademy.ru" method="post">
         <p>
@@ -266,7 +267,7 @@
       <button type="button"><span class="visually-hidden">Кнопка закрытия обратной связи</span></button>
     </section>
     
-    <section>
+    <section class="map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <img src="img/map-popup.png" width="994" height="594" alt="Наше местонахождение">     
       <button type="button"><span class="visually-hidden">Кнопка закрытия карты</span></button>

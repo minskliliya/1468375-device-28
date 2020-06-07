@@ -18,7 +18,8 @@
 
 @font-face { 
   font-family: "Gilroy"; 
-  src: url("../fonts/gilroyextrabold.woff2") format("woff2"), 
+  src: local("Gilroy"),
+       url("../fonts/gilroyextrabold.woff2") format("woff2"), 
        url("../fonts/gilroyextrabold.woff") format("woff"); 
   font-weight: 800; 
   font-style: normal;
@@ -26,7 +27,8 @@
 
 @font-face { 
   font-family: "Gilroy"; 
-  src: url("../fonts/gilroylight.woff2") format("woff2"), 
+  src: local("Gilroy"),
+       url("../fonts/gilroylight.woff2") format("woff2"), 
        url("../fonts/gilroylight.woff") format("woff"); 
   font-weight: 300; 
   font-style: normal;
@@ -34,7 +36,8 @@
 
 @font-face { 
   font-family: "Open Sans"; 
-  src: url("../fonts/opensans.woff2") format("woff2"), 
+  src: local("Open Sans"),
+       url("../fonts/opensans.woff2") format("woff2"), 
        url("../fonts/opensans.woff") format("woff"); 
   font-weight: 400; 
   font-style: normal;
@@ -42,7 +45,8 @@
 
 @font-face { 
   font-family: "Open Sans"; 
-  src: url("../fonts/opensanslight.woff2") format("woff2"), 
+  src: local("Open Sans"),
+       url("../fonts/opensanslight.woff2") format("woff2"), 
        url("../fonts/opensanslight.woff") format("woff"); 
   font-weight: 300; 
   font-style: normal;
@@ -52,15 +56,18 @@
   min-width: 1160px;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", "Gilroy", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
-  line-height: 28px;
+  line-height: 20px;
   font-weight: 300;
   font-style: normal;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
+.header {
+  background-color: var(--special-yellow-dark);
+}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -72,198 +79,163 @@
   overflow: hidden;
 }
 
-a {
+.title {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.title_big {
+  font-size: 47px;
+  line-height: 58px;
+}
+
+.title_small {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.text {
+  line-height: 28px;
+}
+
+.text_open_sans {
+  font-family: var(--basic-font-open-sans)
+}
+
+.text_gilroy {
+  font-family: var(--basic-font-gilroy);
+}
+
+.text_color_white {
+  color: var(--basic-white);
+}
+
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+.text_big {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.text_medium {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.text_small {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.text_tspac_half {
+  letter-spacing: 0.05em;
+}
+
+.text_tspac_one {
+  letter-spacing: 0.1em;
+}
+
+.text_tspac_two {
+  letter-spacing: 0.2em;
+}
+
+.text_weight_lighter {
+  font-weight: 400;
+}
+
+.text_weight_bold {
+  font-weight: 800;
+}
+
+.link {
   color: var(--basic-black);
   text-decoration: none;
 }
 
-.header {
-  background-color: var(--special-yellow-dark);
+.link_big {
+  font-size: 18px;
+  line-height: 22px; 
 }
 
-.user-nav {
-  line-height: 20px;
+.link_medium {
+  font-size: 14px;
+  line-height: 19px;
 }
 
-.search {
+.link_small {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.link_yellow {}
+
+.link_color_white {
+  color: var(--basic-white);
+}
+
+.input {}
+
+.input_search {
   color: var(--basic-half-grey);
+  border: none;
+  background-color: transparent;
 }
 
-.user-menu {
-  color: var(--basic-black);
+.button {}
+
+.button_reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+  outline: none;
+} 
+
+.button_small {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.list {
   list-style: none;
 }
 
-.site-nav {
-  font-family: var(--basic-font-gilroy);
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
+.list_big {
+  font-size: 16px;
+  line-height: 28px;
 }
 
-.catalog__menu {
+.list_circle {
+  list-style-type: circle;
+}
+
+.fielsset {
+  border: none;
+}
+
+.navigation__list_inner {
   display: none;
 }
 
-.site-menu {
-  list-style: none;
+
+.breadcrumbs {
+  opacity: 0.3;
 }
 
-.general-heading {
-  font-family: var(--basic-font-gilroy);
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
-  letter-spacing: 0.2em;
-}
-
-.gerenal-link {
-  font-family: var(--basic-font-gilroy);
-  line-height: 22px;
-  letter-spacing: 0.2em;
-  font-weight: 800;
-  text-transform: uppercase;
+.pagination {
+  background-color: var(--basic-grey-light);
 }
 
 .footer {
   background-color: var(--basic-dark);
 }
 
-.user-menu__link_color_white {
-  color: var(--basic-white-alpha);
-}
-
-.address {
-  font-style: normal;
-  color: var(--basic-white);
-}
-
-.site-menu__link_color_white {
-  color: var(--basic-white);
-}
-
-.phone__link {
-  color: var(--basic-white);
-}
-
 .feedback {
   display: none;
 } 
 
-.delivery {
-  font-family: var(--basic-font-gilroy);
-  font-weight: 800;
-  font-size: 16px;
-  list-style: circle;
-}
-
 .map {
   display: none;
-}
-
-.button-reset {
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  color: var(--basic-half-grey);
-  outline: none;
-}
-
-.product-header {
-  font-family: var(--basic-font-gilroy);
-  font-weight: 800;
-  font-size: 47px;
-  line-height: 58px;
-  color: var(--basic-black);
-}
-
-.breadcrumbs {
-  font-family: var(--basic-font-open-sans);
-  font-size: 14px;
-  line-height: 19px;
-  opacity: 0.3;
-  color: var(--basic-black);
-}
-
-.breadcrumbs__list {
-  list-style: none;
-}
-
-.catalog-select {
-  font-family: var(--basic-font-gilroy);
-  font-weight: 800;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.filter__price {
-  border: none;
-}
-
-.filter__color {
-  border: none;
-}
-
-.filter__bluetooth {
-  border: none;
-}
-
-.filter-header {
-  font-family: var(--basic-font-gilroy);
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.1em;
-}
-
-.filter__color-list {
-  list-style: none;
-}
-
-.filter__bluetooth-list{
-  list-style: none;
-}
-
-.filter__label {
-  font-family: var(--basic-font-open-sans);
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.products-list {
-  font-family: var(--basic-font-gilroy);
-  list-style: none;
-  letter-spacing: 0.05em;
-}
-
-.product__name {
-  font-weight: 800;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.product__price {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 300;
-}
-
-.cart {
-  display: none;
-}
-
-.compare {
-  display: none;
-}
-
-.sort__types {
-  list-style: none;
-}
-
-.social-media {
-  list-style: none;
 }

@@ -17,21 +17,21 @@
 
       <form class="search header__search" action="https://echo.htmlacademy.ru" method="get">
         <button class="button button_reset search__button" type="button"><span class="visually-hidden">Кнопка поиска по сайту</span></button>
-        <input class="input input_search search__input" type="search" value="Поиск по сайту">
+        <input class="input text_size_big input_search search__input" type="search" value="Поиск по сайту">
       </form>
 
-      <ul class="list user-menu header__user-menu">  
+      <ul class="list text_size_big user-menu header__user-menu">  
         <li><a class="link user-menu__link" href="#">Валентик Петухов</a></li>  
         <li><button class="button button_reset user-menu__button" type="button">Выйти</button></li>           
         <li><a class="link user-menu__link" href="#">Сравнить</a></li>
         <li><a class="link user-menu__link" href="#">Корзина</a></li>
       </ul>
 
-      <nav class="navigation text_gilroy text_uppercase text_weight_bold text_tspac_two header__nav">
-        <ul class="list link_big navigation__list navigation__list_external">   
+      <nav class="navigation title_size_medium text_gilroy text_uppercase text_weight_bold header__nav">
+        <ul class="list title_size_medium navigation__list navigation__list_external">   
           <li>
             <a class="link navigation__link" href="catalog.html">каталог товаров</a>
-            <ul class="list navigation__list navigation__list_inner">  
+            <ul class="list text_size_big navigation__list navigation__list_inner">  
               <li><a class="link navigation__link" href="#">Виртуальная реальность</a></li>         
               <li><a class="link navigation__link" href="#">Моноподы для селфи</a></li>
               <li><a class="link navigation__link" href="#">Экшн-камеры</a></li>
@@ -46,24 +46,23 @@
         </ul>         
       </nav>  
     </header>  
-       
 
     <main class="container page-body__container">
-      <h1 class="title_big text_gilroy container__title">Моноподы для селфи</h1>
-      <ul class="list breadcrumbs container__breadcrumbs">
-        <li><a class="link link_medium breadcrumbs__link" href="index.html">Главная</a></li>
-        <li><a class="link link_medium breadcrumbs__link" href="catalog.html">Каталог товаров</a></li>
-        <li><a class="link link_medium breadcrumbs__link" href="#">Моноподы для селфи</a></li>
+      <h1 class="title_size_huge text_gilroy container__title">Моноподы для селфи</h1>
+      <ul class="list text_size_medium breadcrumbs container__breadcrumbs">
+        <li><a class="link breadcrumbs__link" href="index.html">Главная</a></li>
+        <li><a class="link breadcrumbs__link" href="catalog.html">Каталог товаров</a></li>
+        <li><a class="link breadcrumbs__link" href="#">Моноподы для селфи</a></li>
       </ul>
 
       <div class="wrapper-filter container__wrapper-filter">
-        <h2 class="title text_gilroy text_tspac_one text_uppercase wrapper-filter__filter">фильтр:</h2>
-        <h2 class="title text_gilroy text_tspac_one text_uppercase wrapper-filter__sort">cортировка:</h2>
+        <h2 class="title title_size_small text_gilroy text_uppercase wrapper-filter__filter">фильтр:</h2>
+        <h2 class="title title_size_small text_gilroy text_uppercase wrapper-filter__sort">cортировка:</h2>
 
-        <ul class="list title_small wrapper-filter__types">
-          <li><a class="link link_medium wrapper-filter__link" href="#">По цене</a></li>
-          <li><a class="link link_medium wrapper-filter__link" href="#">По типу</a></li>
-          <li><a class="link link_medium wrapper-filter__link" href="#">По популярности</a></li>
+        <ul class="list text_size_medium wrapper-filter__types">
+          <li><a class="link wrapper-filter__link" href="#">По цене</a></li>
+          <li><a class="link wrapper-filter__link" href="#">По типу</a></li>
+          <li><a class="link wrapper-filter__link" href="#">По популярности</a></li>
           <li>
             <a class="link wrapper-filter__link" href="#">
               <img class="wrapper-filter__img" src="img/icon-down-dir.svg" width="10" height="11" alt="Сортировка по возрастанию">
@@ -80,19 +79,19 @@
       <section class="filter container__filter">
         <form action="https://echo.htmlacademy.ru" method="get" class="form filter__form">
           <fieldset class="fielsset text_gilroy price-filter form__fieldset form__fieldset_price-filter">
-            <h3 class="title_small text_tspac_one price-filter__title">Стоимость</h3>
+            <h3 class="price-filter__title">Стоимость</h3>
             <div>
               <div></div>
-              <button class="button_reset button_small text_gilroy price-filter__label" type="submit">от 0</button>
-              <button class="button_reset button_small text_gilroy price-filter__label" type="submit">до 50000</button>
+              <button class="button_reset text text_gilroy price-filter__label" type="submit">от 0</button>
+              <button class="button_reset text text_gilroy price-filter__label" type="submit">до 50000</button>
               <div></div>
               <input class="input price-filter__input" type="hidden" id="minValue" name="minValue" value="0">
               <input class="input price-filter__input" type="hidden" id="maxValue" name="maxValue" value="5000">
             </div>  
           </fieldset>  
           <fieldset class="fielsset color-filter form__fieldset form__fieldset_color-filter">
-            <h3 class="title_small text_gilroy text_tspac_one color-filter__title">Цвет</h3>
-            <ul class="list link_medium color-filter__list">
+            <h3 class="text_gilroy color-filter__title">Цвет</h3>
+            <ul class="list text_size_medium color-filter__list">
               <li>
                 <input class="input input_checkbox color-filter__input" type="checkbox" name="color" value="black" id="filter-black" checked>
                 <label class="label color-filter__label" for="filter-black">Черный</label>
@@ -116,8 +115,8 @@
             </ul>
           </fieldset>
           <fieldset class="fielsset bluetooth-filter form__fieldset form__fieldset_filter-bluetooth">
-            <h3 class="title_small text_gilroy text_tspac_one bluetooth-filter__title">Bluetooth</h3>
-            <ul class="list link_medium bluetooth-filter__list">
+            <h3 class="text_gilroy bluetooth-filter__title">Bluetooth</h3>
+            <ul class="list text_size_medium bluetooth-filter__list">
               <li>
                 <input class="input input_radio bluetooth-filter__input" type="radio" name="bluetooth" value="yes" id="filter-yes" checked>
                 <label class="label bluetooth-filter__label" for="filter-yes">Есть</label>
@@ -128,7 +127,7 @@
               </li>
             </ul>
           </fieldset>
-          <p class="filter__show"><a class="link link_big text_gilroy text_tspac_two text_uppercase text_weight_bold link_yellow filter__show_link" href="#">Показать</a></p>
+          <p class="filter__show"><a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow filter__show_link" href="#">Показать</a></p>
         </form>
       </section>  
 
@@ -138,33 +137,33 @@
             <article class="product products__article">
               <h2 class="visually-hidden">Любительская селфи палка</h2>
               <img class="product__img" src="img/amatur-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">       
-              <a class="link link_big text_tspac_half text_weight_bold product__link" href="#">     
-                Любительская селфи палка <span class="text_weight_lighter text_medium">500 руб.</span>
+              <a class="link title_size_medium text_weight_bold product__link" href="#">     
+                Любительская селфи палка <span class="title_size_tiny text_weight_lighter">500 руб.</span>
               </a>
-              <a class="link link_big text_gilroy text_tspac_two text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-              <a class="link link_small text_tspac_one text_open_sans product__link" href="#">Добавить к сравнению</a>
+              <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
+              <a class="link link_small text_open_sans product__link" href="#">Добавить к сравнению</a>
             </article>  
           </li>
           <li>             
             <article class="product products__article">
               <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
               <img class="product__img" src="img/prof-selfy-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">       
-              <a class="link link_big text_tspac_half text_weight_bold product__link" href="#">     
-                Профессиональная селфи-палка <span class="text_weight_lighter text_medium">1500 руб.</span>
+              <a class="link title_size_medium text_weight_bold product__link" href="#">     
+                Профессиональная селфи-палка <span class="title_size_tiny text_weight_lighter">1500 руб.</span>
               </a>
-              <a class="link link_big text_gilroy text_tspac_two text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-              <a class="link link_small text_tspac_one text_open_sans product__link" href="#">Добавить к сравнению</a>
+              <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
+              <a class="link text_size_small text_open_sans product__link" href="#">Добавить к сравнению</a>
             </article>             
           </li>
           <li>   
             <article class="product products__article"> 
               <h2 class="visually-hidden">Непотовляемая селфи-палка</h2> 
               <img class="product__img" src="img/unsinkable-selfy-stick.png" width="360" height="380" alt="Непотовляемая селфи-палка">       
-              <a class="link link_big text_tspac_half text_weight_bold product__link" href="#">     
-                Непотовляемая селфи-палка <span class="text_weight_lighter text_medium">2500 руб.</span>
+              <a class="link title_size_medium text_weight_bold product__link" href="#">     
+                Непотовляемая селфи-палка <span class="title_size_tiny text_weight_lighter">2500 руб.</span>
               </a>
-              <a class="link link_big text_gilroy text_tspac_two text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-              <a class="link link_small text_tspac_one text_open_sans product__link" href="#">Добавить к сравнению</a>
+              <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
+              <a class="link text_size_small text_open_sans product__link" href="#">Добавить к сравнению</a>
             </article>   
           </li>
           <li>  
@@ -172,17 +171,17 @@
               <h2 class="visually-hidden">Селфи-палка "Следуй за мной"</h2>  
               <img class="new product__new" src="img/new.svg" alt="Новый товар"> 
               <img class="product__img" src="img/go-selfy-stick.png" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">       
-              <a class="link text text_weight_bold product__link" href="#">     
-                Селфи-палка "Следуй за мной" <span class="text_weight_lighter text_medium">4900 руб.</span>
+              <a class="link title_size_medium text_weight_bold product__link" href="#">     
+                Селфи-палка "Следуй за мной" <span class="title_size_tiny text_weight_lighter">4900 руб.</span>
               </a>
-              <a class="link link_big text_gilroy text_tspac_two text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-              <a class="link link_small text_tspac_one text_open_sans product__link" href="#">Добавить к сравнению</a>
+              <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
+              <a class="link text_size_small text_open_sans product__link" href="#">Добавить к сравнению</a>
             </article>   
           </li>         
         </ul>  
 
-        <div class="pagination title text_gilroy text_weight_bold text_tspac_one text_uppercase products__pagination">
-          <button class="button button_reset title text_gilroy text_weight_bold text_tspac_one text_uppercase pagination__back" type="button">назад</button>
+        <div class="pagination title_size_small text_gilroy text_weight_bold text_uppercase products__pagination">
+          <button class="button button_reset title_size_small text_gilroy text_weight_bold text_uppercase pagination__back" type="button">назад</button>
 
           <ul class="list pagination__list">
             <li><a class="link pagination__link" href="#"><span class="visually-hidden">Переход на страницу - </span>1</a></li>
@@ -190,7 +189,7 @@
             <li><a class="link pagination__link" href="#"><span class="visually-hidden">Переход на страницу - </span>3</a></li>
           </ul>
 
-          <button class="button button_reset title text_gilroy text_weight_bold text_tspac_one text_uppercase pagination__forward" type="button">вперед</button>
+          <button class="button button_reset title_size_small text_gilroy text_weight_bold text_uppercase pagination__forward" type="button">вперед</button>
         </div>  
       </section>       
     </main>  
@@ -200,24 +199,24 @@
         <a class="link logo-footer__link" href="index.html"><img class="logo-footer__img" src="img/logo-yellow.png" width="164" height="36" alt="Логотип Девайс"></a>
       </p>
 
-      <ul class="list menu-footer footer__menu-footer"> 
+      <ul class="list text_size_big menu-footer footer__menu-footer">   
         <li><a class="link link_color_white menu-footer__link" href="#">Валентик Петухов</a></li>   
-        <li><button class="button button_reset text_color_white menu-footer__button" type="button">Выйти</button></li>              
+        <li><button class="button button_reset text_color_white menu-footer__button" type="button">Выйти</button></li>               
         <li><a class="link link_color_white menu-footer__link" href="#">Сравнить</a></li>
         <li><a class="link link_color_white menu-footer__link" href="#">Корзина</a></li>
       </ul> 
       
       <div class="contacts footer__contacts">
-        <p class="address contacts___address"><address class="text_color_white address__text">г.Москваб ул.Строителей, 15</address></p>
+        <p class="address contacts___address"><address class="text_size_big text_color_white address__text">г.Москваб ул.Строителей, 15</address></p>
         
-        <ul class="list text_gilroy text_uppercase text_weight_bold text_tspac_two navigation-footer contacts__navigation-footer">
+        <ul class="list title_size_medium text_gilroy text_uppercase text_weight_bold navigation-footer contacts__navigation-footer">
           <li><a class="link link_color_white navigation-footer__link" href="#">доставка</a></li>
           <li><a class="link link_color_white navigation-footer__link" href="#">гаранития</a></li>
           <li><a class="link link_color_white navigation-footer__link" href="#">контакты</a></li>
         </ul>
 
         <p class="phone contacts__phone">
-          <a class="link link_color_white phone__link" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+          <a class="link text_size_big link_color_white phone__link" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
         </p>
       </div>
     

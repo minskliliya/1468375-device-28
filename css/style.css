@@ -57,8 +57,8 @@
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 17px;
   font-weight: 300;
   font-style: normal;
   color: var(--basic-black);
@@ -68,6 +68,7 @@
 .header {
   background-color: var(--special-yellow-dark);
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -81,20 +82,61 @@
 
 .title {
   font-size: 16px;
+  line-height: 28px;
+}
+
+.title_size_tiny {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.title_size_small {
+  font-size: 16px;
   line-height: 20px;
 }
 
-.title_big {
-  font-size: 47px;
-  line-height: 58px;
+.title_size_medium {
+  font-size: 16px;
+  line-height: 22px;
 }
 
-.title_small {
-  font-size: 14px;
-  line-height: 17px;
+.title_size_big {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.title_size_huge {
+  font-size: 47px;
+  line-height: 57px;
 }
 
 .text {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.text_size_tiny {
+  font-size: 13px;
+  line-height: 15px;
+}
+
+.text_size_small {
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.text_size_medium {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.text_size_big {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.text_size_huge {
+  font-size: 15px;
   line-height: 28px;
 }
 
@@ -114,33 +156,6 @@
   text-transform: uppercase;
 }
 
-.text_big {
-  font-size: 36px;
-  line-height: 42px;
-}
-
-.text_medium {
-  font-size: 16px;
-  line-height: 18px;
-}
-
-.text_small {
-  font-size: 13px;
-  line-height: 15px;
-}
-
-.text_tspac_half {
-  letter-spacing: 0.05em;
-}
-
-.text_tspac_one {
-  letter-spacing: 0.1em;
-}
-
-.text_tspac_two {
-  letter-spacing: 0.2em;
-}
-
 .text_weight_lighter {
   font-weight: 400;
 }
@@ -152,21 +167,6 @@
 .link {
   color: var(--basic-black);
   text-decoration: none;
-}
-
-.link_big {
-  font-size: 18px;
-  line-height: 22px; 
-}
-
-.link_medium {
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.link_small {
-  font-size: 13px;
-  line-height: 18px;
 }
 
 .link_yellow {}
@@ -193,21 +193,11 @@
   outline: none;
 } 
 
-.button_small {
-  font-size: 14px;
-  line-height: 16px;
-}
-
 .list {
   list-style: none;
 }
 
-.list_big {
-  font-size: 16px;
-  line-height: 28px;
-}
-
-.list_circle {
+.list_style_circle {
   list-style-type: circle;
 }
 
@@ -218,7 +208,6 @@
 .navigation__list_inner {
   display: none;
 }
-
 
 .breadcrumbs {
   opacity: 0.3;

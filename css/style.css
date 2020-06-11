@@ -110,6 +110,10 @@
   line-height: 57px;
 }
 
+.title_background_grey {
+  background-color: var(--basic-half-grey);
+}
+
 .text {
   font-size: 14px;
   line-height: 16px;
@@ -205,12 +209,23 @@
   border: none;
 }
 
+.services {
+  background-color: var(--basic-grey-light);
+}
 .navigation__list_inner {
   display: none;
 }
 
 .breadcrumbs {
   opacity: 0.3;
+}
+
+.wrapper-filter {
+  background-color: var(--basic-grey-light);
+}
+
+.filter {
+  background-color: var(--basic-grey-light);
 }
 
 .pagination {

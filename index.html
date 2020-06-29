@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
@@ -7,28 +7,27 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-
-    <header class="header page-body__header">   
+   
+    <header class="header wrapper wrapper_indent page-body__header">   
       <p class="logo header__logo">
         <a class="link logo__link" href="index.html">
           <img class="logo__img" src="img/logo.png" width="164" height="36" alt="Логотип Девайс">
         </a>
       </p>
 
-      <form class="search header__search" action="https://echo.htmlacademy.ru" method="get">
-        <button class="button button_reset search__button" type="button"><span class="visually-hidden">Кнопка поиска по сайту</span></button>
-        <input class="input text_size_big input_search search__input" type="search" value="Поиск по сайту">
-      </form>
-
-      <ul class="list text_size_big user-menu header__user-menu">  
-        <li><button class="button button_reset user-menu__button" type="button">Войти</button></li>           
-        <li><a class="link user-menu__link" href="#">Сравнить</a></li>
-        <li><a class="link user-menu__link" href="#">Корзина</a></li>
-      </ul>
+      <div class="menu text_size_big header__menu">      
+        <form class="search menu__search" action="https://echo.htmlacademy.ru" method="get">
+          <button class="button button_reset search__button" type="button"><span class="visually-hidden">Кнопка поиска по сайту</span></button>
+          <input class="input input_search search__input" type="search" value="Поиск по сайту">
+        </form>
+        <div class="menu__button"><a class="link menu__link" type="button">Войти</a></div> 
+        <div class="menu__compare"><a class="link menu__link" href="#">Сравнить</a></div>
+        <div class="menu__cart" ><a class="link menu__link" href="#">Корзина</a></div>
+      </div>
 
       <nav class="navigation title_size_medium text_gilroy text_uppercase text_weight_bold header__nav">
-        <ul class="list title_size_medium navigation__list navigation__list_external">   
-          <li>
+        <ul class="list title_size_medium nav-list-external navigation__nav-list-external">   
+          <li> 
             <a class="link navigation__link" href="catalog.html">каталог товаров</a>
             <ul class="list text_size_big navigation__list navigation__list_inner">  
               <li><a class="link navigation__link" href="#">Виртуальная реальность</a></li>         
@@ -41,46 +40,51 @@
           </li> 
           <li><a class="link navigation__link" href="#">доставка</a></li>
           <li><a class="link navigation__link" href="#">гаранития</a></li>
-          <li><a class="link navigation__link" href="#">контакты</a></li>
+          <li class="text_align_right"><a class="link navigation__link" href="#">контакты</a></li>
         </ul>         
       </nav>  
     </header>  
 
     <main class="container page-body__container">
-
-      <div class="slider page-body__slider">
+      <div class="slider wrapper page-body__slider">
         <h2 class="visually-hidden">Основной слайдер</h2>
-        <div> 
+        <div > 
           <ul class="list switch slider__switch">
-            <li><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
-            <li><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
-            <li><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
+            <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
+            <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
+            <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
           </ul>
           <ul class="list text_gilroy content-slider slider__content-slider">
-            <li class="item content-slider__item">
-              <img class="content-slider__img" src="img/main-slider1.png" width="384" height="486" alt="Слайдер - селфи палки"> 
-              <h3 class="title_size_huge content-slider__title">Делай селфи,<br> как Бен Стиллер!</h3>
-              <img class="content-slider__number" src="img/slider-number-01.svg" width="182" height="170" alt="Слайдер 1">
-              <p class="text_size_big text_open_sans content-slider__text">Самая длинная палка для селфи доступна в нашем магазине. 
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-              </p> 
-              <a class="link title_size_medium text_uppercase text_weight_bold link_yellow content-slider__link" href="#">подробнее</a> 
-              <ul class="list content-slider__list">
-                <li>
-                  <p class="title_size_big">8,5 м</p>
-                  <p class="text_size_tiny">Длинна палки</p>            
-                </li>
-                <li>
-                  <p class="title_size_big">5 кг</p>
-                  <p class="text_size_tiny">Вес палки</p>          
-                </li>
-                <li>
-                  <p class="title_size_big">Карбон</p>
-                  <p class="text_size_tiny">Материал</p>          
-                </li>           
-              </ul>
+            <li class="item slider-item content-slider__slider-item">
+              <div class="item__img">
+                <img class="content-slider__img" src="img/main-slider1.png" width="384" height="486" alt="Слайдер - селфи палки"> 
+              </div> 
+              <div class="content item__content"> 
+                <h3 class="title_size_huge content-slider__title-content">Делай селфи,<br> как Бен Стиллер!</h3>
+                <div class="number-slider content-slider__number-slider"> 
+                  <img  src="img/slider-number-01.svg" width="182" height="170" alt="Слайдер 1">
+                </div>
+                <p class="text_size_big text_open_sans content-slider__text">Самая длинная палка для селфи доступна в нашем магазине. 
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </p> 
+                <a class="link title_size_medium text_uppercase text_weight_bold link_yellow content-slider__link" href="#">подробнее</a> 
+                <ul class="list list-description list_no_indent content-slider__list-description">
+                  <li class="list-description__item">
+                    <p class="title_size_big">8,5 м</p>
+                    <p class="text_size_tiny">Длинна палки</p>            
+                  </li>
+                  <li class="list-description__item">
+                    <p class="title_size_big">5 кг</p>
+                    <p class="text_size_tiny">Вес палки</p>          
+                  </li>
+                  <li class="list-description__item">
+                    <p class="title_size_big">Карбон</p>
+                    <p class="text_size_tiny">Материал</p>          
+                  </li>           
+                </ul>
+              </div>  
             </li>
-            <li class="item content-slider__item">
+            <li class="item content-slider__item hidden-content">
               <img class="content-slider__img" src="img/main-slider2.png" width="345" height="485" alt="Слайдер - фитнес браслеты">
               <h3 class="title_size_huge content-slider__title">Худеем<br> правильно!</h3>
               <img class="content-slider__number" src="img/slider-number-02.svg" width="182" height="170" alt="Слайдер 2">
@@ -95,7 +99,7 @@
                 </li>        
               </ul>
             </li>
-            <li class="item content-slider__item">
+            <li class="item content-slider__item hidden-content">
               <img class="content-slider__img" src="img/main-slider3.png" width="526" height="334" alt="Слайдер - квадракоптер">
               <h3 class="title_size_huge content-slider__title">Порхает как бабочка,<br> жалит как пчела!</h3>
               <img class="content-slider__number" src="img/slider-number-03.svg" width="182" height="170" alt="Слайдер 3">
@@ -118,151 +122,153 @@
         </div>       
       </div>  
 
-      <section class="popular-goods container__popular-goods">
+      <section class="popular-goods wrapper container__popular-goods">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <ul class="list title_size_medium popular-goods__list">
-          <li>
-            <img class="popular-goods__img" src="img/popular-1.svg" width="160" height="160" alt="Виртуальная реальность">
+        <ul class="list title_size_medium popular-list popular-goods__popular-list">
+          <li class="popular-item popular-item_virtual-reality popular-goods__popular-item">
             <a class="link text_gilroy text_weight_bold popular-goods__link" href="#">Виртуальная реальность</a>
           </li>
-          <li>
-            <img class="popular-goods__img" src="img/popular-2.svg" width="160" height="160" alt="Моноподы для селфи">
+          <li class="popular-item popular-item_monopods popular-goods__popular-item">
             <a class="link text_gilroy text_weight_bold popular-goods__link" href="#">Моноподы для селфи</a>
           </li>
-          <li>
-            <img class="popular-goods__img" src="img/popular-3.svg" width="160" height="160" alt="Экшн-камеры">
+          <li class="popular-item popular-item_camera popular-goods__popular-item">
             <a class="link text_gilroy text_weight_bold popular-goods__link" href="#">Экшн-камеры</a>
           </li>
-          <li>
-            <img class="popular-goods__img" src="img/popular-4.svg" width="160" height="160" alt="Фитнес-браслеты">
+          <li class="popular-item popular-item_band popular-goods__popular-item">
             <a class="link text_gilroy text_weight_bold popular-goods__link" href="#">Фитнес-браслеты</a>
           </li>
-          <li>
-            <img class="popular-goods__img" src="img/popular-5.svg" width="160" height="160" alt="Умные часы">
+          <li class="popular-item popular-item_hours popular-goods__popular-item">
             <a class="link text_gilroy text_weight_bold popular-goods__link" href="#">Умные часы</a>
           </li>
-          <li>
-            <img class="popular-goods__img" src="img/popular-6.svg" width="160" height="160" alt="Квадрокоптеры">
+          <li class="popular-item popular-item_quadcopters popular-goods__popular-item">
             <a class="link text_gilroy text_weight_bold popular-goods__link" href="#">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
       
       <section class="services container__services">
-        <h2 class="visually-hidden">Сервисы</h2>
+        <div class="wrapper services-wrapper services__services-wrapper">
+          <h2 class="visually-hidden">Сервисы</h2>
 
-        <ul class="list title_size_medium text_gilroy text_uppercase text_weight_bold services__list">
-          <li><a class="link link_yellow service__item_delivery services__link" href="#">доставка</a></li>
-          <li><a class="link link_yellow service__item_warranty services__link" href="#">гарантия</a></li>
-          <li><a class="link link_yellow service__item_credit services__link" href="#">кредит</a></li>
-        </ul>  
-      
-        <ul class="list services__content"> 
-          <li class="item services__item">
-            <h3 class="title_size_huge text_gilroy services__title">Доставка</h3>
-            <p class="text_size_huge services__text">Мы с удовольствием доставим ваш товар прямо к вашему <br>
-              подъезду совершенно бесплатно! Ведь мы неплохо<br> 
-              заработаем, поднимая его на ваш этаж.<br>
-            </p>    
-            <img class="services__img" src="img/delivery.svg" width="136" height="164" alt="Доставка">
-          </li>  
-          <li class="item services__item">
-            <h3 class="title_size_huge text_gilroy services__title">Гарантия</h3>
-            <p class="text_size_huge services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>
-              не переживайте, мы выдадим вам новый.<br>
-              Товар, не дом, конечно же.<br>
-            </p>    
-            <img class="services__img" src="img/warranty.svg" width="136" height="164" alt="Гарантия">
-          </li>  
-          <li class="item services__item">
-            <h3 class="title_size_huge text_gilroy services__title">Кредит</h3>
-            <p class="text_size_huge services__text">Залезть в долговую яму стало проще! Кредитные консультанты<br> 
-              подберут для вас наиболее выгодные<br> 
-              условия кредита. Выгодные для нашего банка, разумеется.<br>
-            </p>    
-            <img class="services__img" src="img/credit.svg" width="136" height="164" alt="Кредит">
-          </li> 
-        </ul>  
+          <ul class="list title_size_medium text_gilroy text_uppercase text_weight_bold services__list">
+            <li><a class="link link_yellow service__item_delivery services__link" href="#">доставка</a></li>
+            <li><a class="link link_yellow service__item_warranty services__link" href="#">гарантия</a></li>
+            <li><a class="link link_yellow service__item_credit services__link" href="#">кредит</a></li>
+          </ul>  
+        
+          <ul class="list services__content"> 
+            <li class="item services__item">
+              <h3 class="title_size_huge text_gilroy services__title">Доставка</h3>
+              <p class="text_size_huge services__text">Мы с удовольствием доставим ваш товар прямо к вашему <br>
+                подъезду совершенно бесплатно! Ведь мы неплохо<br> 
+                заработаем, поднимая его на ваш этаж.<br>
+              </p>    
+              <img class="services__img" src="img/delivery.svg" width="136" height="164" alt="Доставка">
+            </li>  
+            <li class="item services__item hidden-content">
+              <h3 class="title_size_huge text_gilroy services__title">Гарантия</h3>
+              <p class="text_size_huge services__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — <br>
+                не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.<br>
+              </p>    
+              <img class="services__img" src="img/warranty.svg" width="136" height="164" alt="Гарантия">
+            </li>  
+            <li class="item services__item hidden-content">
+              <h3 class="title_size_huge text_gilroy services__title">Кредит</h3>
+              <p class="text_size_huge services__text">Залезть в долговую яму стало проще! Кредитные консультанты<br> 
+                подберут для вас наиболее выгодные<br> 
+                условия кредита. Выгодные для нашего банка, разумеется.<br>
+              </p>    
+              <img class="services__img" src="img/credit.svg" width="136" height="164" alt="Кредит">
+            </li> 
+          </ul>  
+        </div>  
       </section>
 
-      <section class="companies container__companies">
+      <section class="companies wrapper container__companies">
         <h2 class="visually-hidden">Логотипы комапаний</h2>
-        <ul class="list companies__list">
-          <li><img class="companies__img" src="img/logo-1.png" width="260" height="100" alt="Логотип DJI"></li>
-          <li><img class="companies__img" src="img/logo-2.png" width="260" height="100" alt="Логотип Gadgets"></li>
-          <li><img class="companies__img" src="img/logo-3.png" width="260" height="100" alt="Логотип GoPro"></li>
-          <li><img class="companies__img" src="img/logo-4.png" width="260" height="100" alt="Логотип Vive"></li>
+        <ul class="list companies-list companies__companies-list">
+          <li class="companies-item companies-item_logo-dji companies__companies-item"></li>
+          <li class="companies-item companies-item_logo-gadgets companies__companies-item"></li>
+          <li class="companies-item companies-item_logo-gopro companies__companies-item"></li>
+          <li class="companies-item companies-item_logo-vive companies__companies-item"></li>
         </ul>
       </section>
 
-      <section class="about-us container__about-us">
-        <h2 class="title_size_huge text_gilroy about-us__title">О нас</h2>
-        <p class="text_size_huge about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>       
-        <p class="text_size_huge about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России! <span class="text text_uppercase">device</span> работает
-          со многими транспортными компаниями:
-        </p>
-        <ul class="list title_size_tiny list_style_circle text_weight_bold about-us__list">
-          <li class="item title about-us__item">Деловые линии</li>
-          <li class="item title about-us__item">Авторейдинг</li>
-          <li class="item title about-us__item">ЖелДорЭкседиция</li>
-        </ul>
-        <p class="more about-us__more">
-          <a class="link link_yellow title_size_medium text_gilroy text_uppercase text_weight_bold more__link" href="#">
-            подробнее о нас
-          </a>
-        </p>
-      </section>
-    
-      <section class="contacts container__contacts">
-        <h2 class="title_size_huge text_gilroy contacts__title">Контакты</h2>
-        <p class="text_size_huge contacts__text">
-          Вы можете забрать товар сами, заехав в наш офис. Заодно, вы смотеже проверить работоспособность покупки.
-          Всякое бывает.
-        </p>
-        <img class="contacts__img" src="img/map.png" width="560" height="222" alt="Наше местонахождение">
-        <p class="write-to-us contacts__write-to-us">
-          <a class="link link_yellow title_size_medium text_gilroy text_uppercase text_weight_bold write-to-us__link" href="#">
-            напишите нам
-          </a>
-        </p>
-      </section>
+      <section class="contact-info wrapper container__contact-info">
+        <div class="about-us contact-info__about-us">
+          <h2 class="title_size_huge text_gilroy about-us__title">О нас</h2>
+          <p class="text_size_huge about-us__text">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас</p>       
+          <p class="text_size_huge about-us__text">Мы можем доставить ваш товар в самые отдаленные точки России! <span class="text text_uppercase">device</span> работает
+            со многими транспортными компаниями:
+          </p>
+          <ul class="list title_size_tiny list_style_circle text_weight_bold about-us__list">
+            <li class="item title about-us__item">Деловые линии</li>
+            <li class="item title about-us__item">Авторейдинг</li>
+            <li class="item title about-us__item">ЖелДорЭкседиция</li>
+          </ul>
+          <p class="more about-us__more">
+            <a class="link link_yellow title_size_medium text_gilroy text_uppercase text_weight_bold more__link" href="#">
+              подробнее о нас
+            </a>
+          </p>
+        </div>
+      
+        <div class="contact contact-info__contact">
+          <h2 class="title_size_huge text_gilroy contact__title">Контакты</h2>
+          <p class="text_size_huge contact__text">
+            Вы можете забрать товар сами, заехав в наш офис. Заодно, вы смотеже проверить работоспособность покупки.
+            Всякое бывает.
+          </p>
+          <img class="contact__img" src="img/map.png" width="560" height="222" alt="Наше местонахождение">
+          <p class="write-to-us contact__write-to-us">
+            <a class="link link_yellow title_size_medium text_gilroy text_uppercase text_weight_bold write-to-us__link" href="#">
+              напишите нам
+            </a>
+          </p>
+        </div>
+      </section>  
     </main>  
 
     <footer class="footer page-body__footer">       
-      <p class="logo-footer footer__logo-footer">
-        <a class="link logo-footer__link" href="index.html"><img class="logo-footer__img" src="img/logo-yellow.png" width="164" height="36" alt="Логотип Девайс"></a>
-      </p>
+      <div class="wrapper_indent footer__section">
+        <div class="text_size_big menu-footer footer__menu-footer">   
+          <div><a class="link link_color_white menu-footer__link" type="button">Войти</a></div>             
+          <div><a class="link link_color_white menu-footer__link" href="#">Сравнить</a></div>
+          <div><a class="link link_color_white menu-footer__link" href="#">Корзина</a></div>
+        </div>
 
-      <ul class="list text_size_big menu-footer footer__menu-footer">   
-        <li><button class="button button_reset text_color_white menu-footer__button" type="button">Войти</button></li>             
-        <li><a class="link link_color_white menu-footer__link" href="#">Сравнить</a></li>
-        <li><a class="link link_color_white menu-footer__link" href="#">Корзина</a></li>
-      </ul> 
-      
-      <div class="contacts footer__contacts">
-        <p class="address contacts___address"><address class="text_size_big text_color_white address__text">г.Москваб ул.Строителей, 15</address></p>
+        <p class="logo-footer footer__logo-footer">
+          <a class="link logo-footer__link" href="index.html"><img class="logo-footer__img" src="img/logo-yellow.png" width="164" height="36" alt="Логотип Девайс"></a>
+        </p> 
         
-        <ul class="list title_size_medium text_gilroy text_uppercase text_weight_bold navigation-footer contacts__navigation-footer">
-          <li><a class="link link_color_white navigation-footer__link" href="#">доставка</a></li>
-          <li><a class="link link_color_white navigation-footer__link" href="#">гаранития</a></li>
-          <li><a class="link link_color_white navigation-footer__link" href="#">контакты</a></li>
-        </ul>
+        <div class="contacts footer__contacts">
+          <address class="text_size_big text_color_white address__contacts">г.Москваб ул.Строителей, 15</address>
+          
+          <ul class="list title_size_medium text_gilroy text_uppercase text_weight_bold navigation-footer contacts__navigation-footer">
+            <li><a class="link link_color_white navigation-footer__link" href="#">доставка</a></li>
+            <li><a class="link link_color_white navigation-footer__link" href="#">гаранития</a></li>
+            <li><a class="link link_color_white navigation-footer__link" href="#">контакты</a></li>
+          </ul>
 
-        <p class="phone contacts__phone">
-          <a class="link text_size_big link_color_white phone__link" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
-        </p>
+          <p class="phone text_align_right contacts__phone">
+            <a class="link text_size_big link_color_white phone__link" href="tel:+74954959595">Тел.: +7(495)495-95-95</a>
+          </p>
+        </div>
+      
+        <div class="other-links footer__other-links">
+          <ul class="list socials other-links__socials">
+            <li class="socials-item socials-item_facebook socials__social-item"><a class="link socials__link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="socials-item socials-item_instagram socials__social-item"><a class="link socials__link" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
+            <li class="socials-item socials-item_twitter socials__social-item"><a class="link socials__link" href="#"><span class="visually-hidden">Твиттер</span></a></li>
+          </ul>
+          <p class="htmlacademy text_align_right other-links__htmlacademy">
+            <a class="link htmlacademy__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+              <img class="htmlacademy__img" src="img/logo-html.svg" width="27" height="36" alt="Логотип htmlacademy">
+            </a>
+          </p>
+        </div>
       </div>
-    
-      <ul class="list socials footer__socials">
-        <li><a class="link socials__link" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
-        <li><a class="link socials__link" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-        <li><a class="link socials__link" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-      </ul>
-      <p class="htmlacademy footer__htmlacademy">
-        <a class="link htmlacademy__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <img class="htmlacademy__img" src="img/logo-html.svg" width="164" height="36" alt="Логотип htmlacademy">
-        </a>
-      </p>
     </footer>
 
     <section class="feedback page-body__feedback">

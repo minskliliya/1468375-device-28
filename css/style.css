@@ -249,15 +249,23 @@
 
 .header {
   background-color: var(--special-yellow-dark);
+  height: 300px;
+}
+
+.header_catalog {
+  height: 186px;
 }
 
 .page-body__header {  
   margin-top: 35px;
-  height: 300px;
 }
 
 .header__logo {
-  margin-top: -20px; 
+  margin-top: -22px; 
+}
+
+.header__menu {
+  padding-bottom: 50px;
 }
 
 .menu {
@@ -303,7 +311,20 @@
 }
 
 .content-slider {
-  margin-top: -85px;
+  margin-top: -81px;
+}
+
+.content-slider__text {
+  margin-top: 0px;
+  padding-right: 82px;
+}
+
+.content-slider__text {
+  padding-bottom: 45px;
+}
+
+.content-slider__title-content {
+  margin-bottom: 30px;
 }
 
 .slider-item {
@@ -311,10 +332,23 @@
   grid-template-columns: auto 560px;
 }
 
+.item__slider1-img {
+  margin-top: -48px;
+  margin-left: 45px;
+}
+
+.content-slider__list-description {
+  margin-top: 28px;
+}
+
+.item__props {
+  margin-bottom: 15px;
+}
+
 .switch {
   position: absolute;
   right: 94px;
-  bottom: 160px;
+  bottom: 134px;
 }
 
 .switch__item {
@@ -342,6 +376,7 @@
 }
 
 .container__popular-goods {
+  margin-top: 70px;
   margin-bottom: 70px;
 }
 
@@ -404,6 +439,11 @@
   grid-template-columns: 417px auto;
 }
 
+.container__companies {
+  margin-top: 90px;
+  margin-bottom: 60px;
+}
+
 .services__item {
   position: relative;
 }
@@ -450,6 +490,37 @@
   display: grid;
   grid-template-columns: 474px 560px;
   grid-gap: 127px;
+}
+
+.container__contact-info {
+  margin-bottom: 85px;
+}
+
+.contact__write-to-us {
+  margin-top: 85px;
+}
+
+.contact__text {
+  margin-bottom: 40px;
+}
+  
+.about-us__title {
+  margin-bottom: 40px;
+}
+
+.about-us__text {
+  margin-bottom: 40px;
+}
+
+.about-us__list {
+  padding-left: 18px;
+  margin-top: 20px;
+  margin-bottom: 80px;
+}
+
+.about-us__item {
+  padding-left: 20px;
+  padding-bottom: 20px;
 }
 
 .footer {
@@ -523,6 +594,10 @@
   background-image: url('../img/twitter.svg'); 
 }
 
+.container__breadcrumbs {
+  padding-bottom: 20px;
+}
+
 .breadcrumbs {
   opacity: 0.3;
 }
@@ -533,7 +608,7 @@
 }
 
 .content-catalog-gradient {
-  background: linear-gradient(to right, var(--basic-grey-light) 50%, var(--basic-white) 67.5%);
+  background: linear-gradient(to right, var(--basic-grey-light) 50%, var(--basic-white) 50%);
 }
 
 .wrapper-filter {
@@ -565,10 +640,31 @@
 
 .products-list {
   display: grid;
-  grid-template-columns: 432px 360px;
+  grid-template-columns: 360px 360px;
   justify-content: end;
   grid-gap: 40px;
-  text-align: right;
+  row-gap: 10px
+}
+
+.product__description {
+  display: grid;
+  grid-template-columns: 276px auto;
+}
+
+.container__products {
+  margin-top: 40px;
+}
+
+.description__name-product {
+  margin-top: 0px;
+}
+
+.product__img {
+  margin-bottom: 30px;
+}
+
+.price {
+  float: right;
 }
 
 .pagination {

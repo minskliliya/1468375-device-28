@@ -5,7 +5,6 @@
     <title>HTML Academy: Девайс</title>
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <script type="text/javascript" src="https://unpkg.com/default-passive-events"></script>
   </head>
   <body class="page-body">   
     <header class="header wrapper wrapper_indent page-body__header">   
@@ -16,12 +15,13 @@
       <div class="menu text_size_big header__menu">      
         <form class="search  text_uppercase menu__search" action="https://echo.htmlacademy.ru" method="get">
           <button class="button button_reset search__button" type="button"><span class="visually-hidden">Кнопка поиска по сайту</span></button>
-          <input class="input search-input" placeholder="Поиск по сайту">
+          <input class="input search-input" placeholder="Поиск по сайту" id="search"> 
+          <label for="filter-black" class="visually-hidden" for="search">Поиск по сайту</label>
           <button class="button button_reset find-button search__find-button hidden-content">
             <span class="find-button-span">найти</span>
           </button>
         </form>
-        <div class="menu__button"><a class="link link_opacity login-link" type="button">Войти</a></div> 
+        <div class="menu__button"><a class="link link_opacity login-link" href="#">Войти</a></div> 
         <div class="menu__compare"><a class="link link_opacity compare-link" href="#">Сравнить</a></div>
         <div class="menu__cart" ><a class="link link_opacity cart-link" href="#">Корзина</a></div>
       </div>
@@ -93,9 +93,9 @@
               </div> 
               <div class="content item__content"> 
                 <h3 class="title_size_huge content-slider__title-content">Худеем<br> правильно!</h3>
-                <div class="number-slider content-slider__number-slider"> 
-                  <img  src="img/slider-number-02.svg" width="182" height="170" alt="Слайдер 2">
-                </div>
+                <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
+                  02                 
+                </p>
                 <p class="text_size_big text_open_sans content-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
                   не пропускать занятия и соблюдать диету.
                 </p> 
@@ -116,9 +116,9 @@
               </div> 
               <div class="content item__content"> 
                 <h3 class="title_size_huge content-slider__title-content">Порхает как бабочка,<br> жалит как пчела!</h3>
-                <div class="number-slider content-slider__number-slider"> 
-                  <img  src="img/slider-number-03.svg" width="182" height="170" alt="Слайдер 3">
-                </div>
+                <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
+                  03                 
+                </p>
                 <p class="text_size_big text_open_sans content-slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
                   мощным лазером, замаскированным под стандартную камеру.      
                 </p> 
@@ -259,7 +259,7 @@
       <div class="wrapper_indent footer__section">
         <div class="text_size_big menu-footer footer__menu-footer">   
           <div>
-            <a class="link link_color_white login-link-footer menu-footer__link" type="button">
+            <a class="link link_color_white login-link-footer menu-footer__link" href="#">
               <span class="menu-footer-span">Войти</span>
             </a>
           </div>             
@@ -335,7 +335,7 @@
     <section class="map page-body__map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="550" allowfullscreen></iframe>
-      <button class="button button_reset modal-close map__close-map"type="button"><span class="visually-hidden">Кнопка закрытия карты</span></button>
+      <button class="button button_reset modal-close map__close-map" type="button"><span class="visually-hidden">Кнопка закрытия карты</span></button>
     </section>
 
     <script src="js/write-to-us.js"></script>

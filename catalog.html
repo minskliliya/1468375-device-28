@@ -2,7 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Девайс</title>
+    <title>HTML Academy:  Девайс</title>
     <link href="css/normalize.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -15,17 +15,19 @@
       </p>
 
       <div class="menu text_size_big header__menu">      
-        <form class="search text_uppercase menu__search" action="https://echo.htmlacademy.ru" method="get">
-          <button class="button button_reset search__button" type="button"><span class="visually-hidden">Кнопка поиска по сайту</span></button>
-          <input class="input search-input" placeholder="Поиск по сайту" id="search-catalog"> 
-          <label for="search-catalog">Поиск по сайту</label>
-          <button class="button button_reset find-button search__find-button ">
+        <form class="search  text_uppercase menu__search" action="https://echo.htmlacademy.ru" method="get">
+          <label class="visually-hidden search-label" for="search"></label>
+          <input class="input search-input" placeholder="Поиск по сайту" id="search">          
+          <button class="button button_reset find-button search__find-button" type="submit">
             <span class="find-button-span">найти</span>
           </button>
         </form>
-        <div class="menu__button"><a class="link link_opacity login-link" href="#">Войти</a></div> 
-        <div class="menu__compare"><a class="link link_opacity compare-link" href="#">Сравнить</a></div>
-        <div class="menu__cart" ><a class="link link_opacity cart-link" href="#">Корзина</a></div>
+        <div>
+          <a class="link link_opacity login-link user-link" href="#">Валентин Петухов</a>
+          <a class="link link_opacity" href="#">Выйти</a>
+        </div> 
+        <div><a class="link link_opacity compare-link" href="#">Сравнить</a></div>
+        <div><a class="link link_opacity cart-link" href="#">Корзина</a></div>
       </div>
 
       <nav class="navigation title_size_medium text_gilroy text_weight_bold header__nav">
@@ -58,7 +60,7 @@
         <li class="list_item_inline breadcrumbs-item breadcrumbs__breadcrumbs-item">
           <a class="link breadcrumbs-link breadcrumbs__breadcrumbs-link" href="catalog.html">Каталог товаров</a>
         </li>
-        <li class="list_item_inline breadcrumbs-item breadcrumbs-current">
+        <li class="list_item_inline breadcrumbs-current">
           Моноподы для селфи
         </li>
       </ul>
@@ -87,7 +89,7 @@
 
       <div class="content-catalog-gradient">
         <div class="wrapper content-catalog container__content-catalog">
-          <section class="filter container__filter">
+          <section class="filter">
             <form action="https://echo.htmlacademy.ru" method="get" class="filter-form filter__filter-form">
               <fieldset class="fielsset fielsset_no_indent text_gilroy price-filter filter-form__price-filter">
                 <h3 class="text_gilroy text_spacing_tiny filter__filter-title-price">Стоимость</h3>
@@ -98,10 +100,12 @@
                   <div class="filter-toggle filter-toggle_min filter__filter-toggle"></div>
                   <div class="filter-toggle filter-toggle_max filter__filter-toggle"></div>
                 </div>  
-                <button class="button_reset text text_gilroy price-filter__label-first" type="submit">от 0</button>
-                <button class="button_reset text text_gilroy" type="submit">до 5000</button>
-                <input class="input price-filter__input" type="hidden" id="minValue" name="minValue" value="0">
-                <input class="input price-filter__input" type="hidden" id="maxValue" name="maxValue" value="5000"> 
+                <div class="price-controls text text_gilroy">
+                  <label class="min-price" for="min-price">от</label>
+                  <input class="input control-input price-controls__control-input" type="number" name="min-price" value="0" id="min-price">
+                  <label class="max-price" for="max-price">до</label>
+                  <input class="input control-input price-controls__control-input" type="number" name="max-price" value="5000" id="max-price">
+                </div>
               </fieldset>  
               <fieldset class="fielsset fielsset_no_indent color-filter filter-form__color-filter">
                 <h3 class="text_gilroy text_spacing_tiny filter__filter-title-color">Цвет</h3>
@@ -124,7 +128,7 @@
                   </li>
                   <li class="filter-item filter__filter-item">
                     <input class="visually-hidden filter-input-checkbox filter__filter-input-checkbox" disabled checked type="checkbox" name="color" value="ping" id="filter-ping">
-                    <label class="filter-label filter__filter-label" for="filter-ping">Розовый</label>
+                    <label class="filter-label filter-input-diabled filter__filter-label" for="filter-ping">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
@@ -151,72 +155,63 @@
 
           <section class="products text_gilroy container__products">
             <ul class="list list_no_indent products-list products__products-list">
-              <li>    
-                <article class="product products__article">
-                  <h2 class="visually-hidden">Любительская селфи палка</h2>
-                  <p class="product-card product__product-card">
-                    <img class="product-img product__product-img" src="img/amatur-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
-                    <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
-                      <span class="link_opacity_span">В корзину</span>
+              <li class="product products__item">
+                <h2 class="visually-hidden">Любительская селфи палка</h2>
+                <p class="product-card product__product-card">
+                  <img class="product-img product__product-img" src="img/amatur-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
+                  <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
+                    <span class="link_opacity_span">В корзину</span>
+                  </a>
+                  <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
+                </p> 
+                <div class="description product__description">     
+                  <p class="description__name-product">
+                    <a class="link title_size_medium text_weight_bold" href="#">     
+                      Любительская селфи-палка 
                     </a>
-                    <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
-                  </p> 
-                  <div class="description product__description">     
-                    <p class="name-product description__name-product">
-                      <a class="link title_size_medium text_weight_bold" href="#">     
-                        Любительская селфи-палка 
-                      </a>
-                    </p>
-                    <span class="title_size_tiny text_weight_lighter text_align_right description__price">500 руб.</span>
-                  </div>                  
-                </article>  
+                  </p>
+                  <span class="title_size_tiny text_weight_lighter text_align_right description__price">500 руб.</span>
+                </div>   
               </li>
-              <li>           
-                <article class="product products__article">
-                  <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
-                  <p class="product-card product__product-card">
-                    <img class="product-img product__product-img" src="img/prof-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
-                    <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
-                      <span class="link_opacity_span">В корзину</span>
+              <li class="product products__item">
+                <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
+                <p class="product-card product__product-card">
+                  <img class="product-img product__product-img" src="img/prof-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
+                  <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
+                    <span class="link_opacity_span">В корзину</span>
+                  </a>
+                  <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
+                </p> 
+                <div class="description product__description">     
+                  <p class="description__name-product">
+                    <a class="link title_size_medium text_weight_bold" href="#">     
+                      Профессиональная<br> селфи-палка  
                     </a>
-                    <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
-                  </p> 
-                  <div class="description product__description">     
-                    <p class="name-product description__name-product">
-                      <a class="link title_size_medium text_weight_bold" href="#">     
-                        Профессиональная<br> селфи-палка  
-                      </a>
-                    </p>
-                    <span class="title_size_tiny text_weight_lighter text_align_right description__price">1500 руб.</span>
-                  </div>                  
-                </article>            
+                  </p>
+                  <span class="title_size_tiny text_weight_lighter text_align_right description__price">1500 руб.</span>
+                </div> 
               </li>
-              <li>   
-                <article class="product products__article">
-                  <h2 class="visually-hidden">Непотовляемая селфи-палка</h2>
-                  <p class="product-card product__product-card">
-                    <img class="product-img product__product-img" src="img/unsinkable-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
-                    <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
-                      <span class="link_opacity_span">В корзину</span>
+              <li class="product products__item">  
+                <h2 class="visually-hidden">Непотовляемая селфи-палка</h2>
+                <p class="product-card product__product-card">
+                  <img class="product-img product__product-img" src="img/unsinkable-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
+                  <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
+                    <span class="link_opacity_span">В корзину</span>
+                  </a>
+                  <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
+                </p> 
+                <div class="description product__description">     
+                  <p class="description__name-product">
+                    <a class="link title_size_medium text_weight_bold" href="#">     
+                      Непотовляемая селфи-палка
                     </a>
-                    <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
-                  </p> 
-                  <div class="description product__description">     
-                    <p class="name-product description__name-product">
-                      <a class="link title_size_medium text_weight_bold" href="#">     
-                        Непотовляемая селфи-палка
-                      </a>
-                    </p>
-                    <span class="title_size_tiny text_weight_lighter text_align_right description__price">2500 руб.</span>
-                  </div>                  
-                </article>
+                  </p>
+                  <span class="title_size_tiny text_weight_lighter text_align_right description__price">2500 руб.</span>
+                </div>
               </li>
-              <li>  
-                <article class="product products__article">
-                  <h2 class="visually-hidden">Селфи-палка "Следуй за мной"</h2>
-                   
-                  <p class="product-card product__product-card">
-                    <img class="new product__new" src="img/new.svg" width="62" height="62"  alt="Новый товар">
+              <li class="product products__item">  
+                  <h2 class="visually-hidden">Селфи-палка "Следуй за мной"</h2>                   
+                  <p class="product-card new-product product__product-card">                    
                     <img class="product-img product__product-img" src="img/go-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
                     <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
                       <span class="link_opacity_span">В корзину</span>
@@ -224,21 +219,20 @@
                     <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
                   </p> 
                   <div class="description product__description">     
-                    <p class="name-product description__name-product">
+                    <p class="description__name-product">
                       <a class="link title_size_medium text_weight_bold" href="#">     
                         Селфи-палка "Следуй за мной"
                       </a>
                     </p>
                     <span class="title_size_tiny text_weight_lighter text_align_right description__price">4900 руб.</span>
-                  </div>                  
-                </article>              
+                  </div>  
               </li>         
             </ul>  
 
             <div class="pagination title_size_small text_gilroy text_weight_bold text_uppercase products__pagination">
-              <button class="button button_reset text_spacing_tiny pagination-button pagination__pagination-button" type="button">
+              <a class="link text_spacing_tiny pagination-button pagination__pagination-button" type="button">
                 назад
-              </button>
+              </a>
 
               <ul class="list list_no_indent text_align_center pagination__list">
                 <li class="list list_item_inline"><a class="link pagination-switch pagination-switch-current pagination__pagination-switch" href="#"><span class="visually-hidden">Переход на страницу - </span>1</a></li>
@@ -246,9 +240,9 @@
                 <li class="list list_item_inline"><a class="link pagination-switch pagination__pagination-switch" href="#"><span class="visually-hidden">Переход на страницу - </span>3</a></li>
               </ul>
 
-              <button class="button button_reset text_spacing_tiny pagination-button pagination__pagination-button" type="button">
+              <a class="link text_spacing_tiny pagination-button pagination__pagination-button" type="button">
                 вперед
-              </button>
+              </a>
             </div>  
           </section>     
         </div>  
@@ -260,9 +254,9 @@
         <div class="text_size_big menu-footer footer__menu-footer">   
           <div>
             <a class="link link_color_white login-link-footer user-link menu-footer__link" href="#">
-              <span class="menu-footer-span">Валентик Петухов</span>              
+              <span class="menu-footer-span">Валентин Петухов</span>              
             </a>
-            <a class="link link_color_white user-link menu-footer__link" href="#" ><span class="menu-footer-span">Выйти</span></a>
+            <a class="link link_color_white menu-footer__link" href="#" ><span class="menu-footer-span">Выйти</span></a>
           </div>             
           <div>
             <a class="link link_color_white compare-link-footer menu-footer__link" href="#">

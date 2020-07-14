@@ -8,22 +8,21 @@
   </head>
   <body class="page-body">   
     <header class="header wrapper wrapper_indent page-body__header">   
-      <p class="logo link_opacity header__logo">  
+      <p class="logo header__logo">  
         <img class="logo__img" src="img/logo.png" width="164" height="36" alt="Логотип Девайс">     
       </p>
 
       <div class="menu text_size_big header__menu">      
         <form class="search  text_uppercase menu__search" action="https://echo.htmlacademy.ru" method="get">
-          <button class="button button_reset search__button" type="button"><span class="visually-hidden">Кнопка поиска по сайту</span></button>
-          <input class="input search-input" placeholder="Поиск по сайту" id="search"> 
-          <label for="search">Поиск по сайту</label>
-          <button class="button button_reset find-button search__find-button hidden-content">
+          <label class="visually-hidden search-label" for="search"></label>
+          <input class="input search-input" placeholder="Поиск по сайту" id="search">          
+          <button class="button button_reset find-button search__find-button">
             <span class="find-button-span">найти</span>
           </button>
         </form>
-        <div class="menu__button"><a class="link link_opacity login-link" href="#">Войти</a></div> 
-        <div class="menu__compare"><a class="link link_opacity compare-link" href="#">Сравнить</a></div>
-        <div class="menu__cart" ><a class="link link_opacity cart-link" href="#">Корзина</a></div>
+        <div><a class="link link_opacity login-link" href="#">Войти</a></div> 
+        <div><a class="link link_opacity compare-link" href="#">Сравнить</a></div>
+        <div><a class="link link_opacity cart-link" href="#">Корзина</a></div>
       </div>
 
       <nav class="navigation title_size_medium text_gilroy text_weight_bold header__nav">
@@ -48,97 +47,96 @@
 
     <main class="container page-body__container">
       <div class="slider wrapper page-body__slider">
-        <h2 class="visually-hidden">Основной слайдер</h2>
-        <div > 
-          <ul class="list switch slider__switch">
-            <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
-            <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
-            <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
-          </ul>
-          <ul class="list text_gilroy content-slider slider__content-slider">
-            <li class="item slider-item content-slider__slider-item">
-              <div class="item__slider1-img">
-                <img class="content-slider__img" src="img/main-slider1.png" width="384" height="486" alt="Слайдер - селфи палки"> 
-              </div> 
-              <div class="content item__content"> 
-                <h3 class="title_size_huge content-slider__title-content">Делай селфи,<br> как Бен Стиллер!</h3>
-                <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
-                  01                 
-                </p>
-                <p class="text_size_big text_open_sans content-slider__text">Самая длинная палка для селфи доступна в нашем магазине. 
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p> 
-                <a class="link title_size_medium text_uppercase text_weight_bold link_background link_yellow slider-more content-slider__slider-more" href="#">
-                  <span class="link_opacity_span">подробнее</span>
-                </a> 
-                <ul class="list list-description list_no_indent text_spacing_tiny content-slider__list-description">
-                  <li class="list-description__item">
-                    <p class="title_size_big item__props">8, 5 м</p>
-                    <p class="text_size_tiny">Длина палки</p>            
-                  </li>
-                  <li class="list-description__item">
-                    <p class="title_size_big item__props">5 кг</p>
-                    <p class="text_size_tiny">Вес палки</p>          
-                  </li>
-                  <li class="list-description__item">
-                    <p class="title_size_big item__props">Карбон</p>
-                    <p class="text_size_tiny">Материал</p>          
-                  </li>           
-                </ul>
-              </div>  
-            </li>
-            <li class="item slider-item content-slider__slider-item hidden-content">
-              <div class="item__slider2-img">
-                <img class="content-slider__img" src="img/main-slider2.png" width="345" height="485" alt="Слайдер - фитнес браслеты"> 
-              </div> 
-              <div class="content item__content"> 
-                <h3 class="title_size_huge content-slider__title-content">Худеем<br> правильно!</h3>
-                <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
-                  02                 
-                </p>
-                <p class="text_size_big text_open_sans content-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
-                  не пропускать занятия и соблюдать диету.
-                </p> 
-                <a class="link title_size_medium text_uppercase text_weight_bold link_background link_yellow slider-more content-slider__slider-more" href="#">
-                  <span class="link_opacity_span">подробнее</span>
-                </a> 
-                <ul class="list list-description list_no_indent text_spacing_tiny content-slider__list-description">
-                  <li class="list-description__item">
-                    <p class="title_size_big item__props">48 часов</p>
-                    <p class="text_size_tiny">Без подзарядки</p>            
-                  </li>                  
-                </ul>
-              </div>  
-            </li>
-            <li class="item slider-item content-slider__slider-item hidden-content">
-              <div class="item__slider3-img">
-                <img class="content-slider__img" src="img/main-slider3.png" width="526" height="334" alt="Слайдер - селфи палки"> 
-              </div> 
-              <div class="content item__content"> 
-                <h3 class="title_size_huge content-slider__title-content">Порхает как бабочка,<br> жалит как пчела!</h3>
-                <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
-                  03                 
-                </p>
-                <p class="text_size_big text_open_sans content-slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
-                  мощным лазером, замаскированным под стандартную камеру.      
-                </p> 
-                <a class="link title_size_medium text_uppercase text_weight_bold link_background link_yellow slider-more content-slider__slider-more" href="#">
-                  <span class="link_opacity_span">подробнее</span>
-                </a> 
-                <ul class="list list-description list_no_indent text_spacing_tiny content-slider__list-description">
-                  <li class="list-description__item_slider3">
-                    <p class="title_size_big item__props">800 м</p>
-                    <p class="text_size_tiny">Дальность полета</p>            
-                  </li>
-                  <li class="list-description__item">
-                    <p class="title_size_big item__props">50 м</p>
-                    <p class="text_size_tiny">Радиус поражения</p>          
-                  </li>                     
-                </ul>
-              </div>  
-            </li>           
-          </ul>
-        </div>       
+        <h2 class="visually-hidden">Основной слайдер</h2>       
+        <ul class="list switch slider__switch">
+          <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
+          <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
+          <li class="list_item_inline switch__item"><a class="link switch__link" href="#"><img class="switch__img" src="img/slider-button-empty.svg" width="12" height="12" alt="Следующий слайдер"></a></li>
+        </ul>
+        <ul class="list text_gilroy content-slider slider__content-slider">
+          <li class="item slider-item content-slider__slider-item">
+            <div class="item__slider1-img">
+              <img class="content-slider__img" src="img/main-slider1.png" width="384" height="486" alt="Слайдер - селфи палки"> 
+            </div> 
+            <div class="content item__content"> 
+              <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
+                01                 
+              </p>
+              <h3 class="title_size_huge content-slider__title-content">Делай селфи,<br> как Бен Стиллер!</h3>
+             
+              <p class="text_size_big text_open_sans content-slider__text">Самая длинная палка для селфи доступна в нашем магазине. 
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+              </p> 
+              <a class="link title_size_medium text_uppercase text_weight_bold link_background link_yellow slider-more content-slider__slider-more" href="#">
+                <span class="link_opacity_span">подробнее</span>
+              </a> 
+              <ul class="list list-description list_no_indent text_spacing_tiny content-slider__list-description">
+                <li class="list-description__item">
+                  <p class="title_size_big item__props">8, 5 м</p>
+                  <p class="text_size_tiny">Длина палки</p>            
+                </li>
+                <li class="list-description__item">
+                  <p class="title_size_big item__props">5 кг</p>
+                  <p class="text_size_tiny">Вес палки</p>          
+                </li>
+                <li class="list-description__item">
+                  <p class="title_size_big item__props">Карбон</p>
+                  <p class="text_size_tiny">Материал</p>          
+                </li>           
+              </ul>
+            </div>  
+          </li>
+          <li class="item slider-item content-slider__slider-item hidden-content">
+            <div class="item__slider2-img">
+              <img class="content-slider__img" src="img/main-slider2.png" width="345" height="485" alt="Слайдер - фитнес браслеты"> 
+            </div> 
+            <div class="content item__content"> 
+              <h3 class="title_size_huge content-slider__title-content">Худеем<br> правильно!</h3>
+              <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
+                02                 
+              </p>
+              <p class="text_size_big text_open_sans content-slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы  
+                не пропускать занятия и соблюдать диету.
+              </p> 
+              <a class="link title_size_medium text_uppercase text_weight_bold link_background link_yellow slider-more content-slider__slider-more" href="#">
+                <span class="link_opacity_span">подробнее</span>
+              </a> 
+              <ul class="list list-description list_no_indent text_spacing_tiny content-slider__list-description">
+                <li class="list-description__item">
+                  <p class="title_size_big item__props">48 часов</p>
+                  <p class="text_size_tiny">Без подзарядки</p>            
+                </li>                  
+              </ul>
+            </div>  
+          </li>
+          <li class="item slider-item content-slider__slider-item hidden-content">
+            <div class="item__slider3-img">
+              <img class="content-slider__img" src="img/main-slider3.png" width="526" height="334" alt="Слайдер - селфи палки"> 
+            </div> 
+            <div class="content item__content"> 
+              <h3 class="title_size_huge content-slider__title-content">Порхает как бабочка,<br> жалит как пчела!</h3>
+              <p class="number-slider text_weight_bold text_gilroy text_color_white text_size_enormous content-slider__number-slider">
+                03                 
+              </p>
+              <p class="text_size_big text_open_sans content-slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>
+                мощным лазером, замаскированным под стандартную камеру.      
+              </p> 
+              <a class="link title_size_medium text_uppercase text_weight_bold link_background link_yellow slider-more content-slider__slider-more" href="#">
+                <span class="link_opacity_span">подробнее</span>
+              </a> 
+              <ul class="list list-description list_no_indent text_spacing_tiny content-slider__list-description">
+                <li class="list-description__item_slider3">
+                  <p class="title_size_big item__props">800 м</p>
+                  <p class="text_size_tiny">Дальность полета</p>            
+                </li>
+                <li class="list-description__item">
+                  <p class="title_size_big item__props">50 м</p>
+                  <p class="text_size_tiny">Радиус поражения</p>          
+                </li>                     
+              </ul>
+            </div>  
+          </li>           
+        </ul>      
       </div>  
 
       <section class="popular-goods wrapper container__popular-goods">
@@ -213,10 +211,10 @@
       <section class="companies wrapper container__companies">
         <h2 class="visually-hidden">Логотипы комапаний</h2>
         <ul class="list companies-list companies__companies-list">
-          <li class="companies-item companies-item_logo-dji companies__companies-item"></li>
-          <li class="companies-item companies-item_logo-gadgets companies__companies-item"></li>
-          <li class="companies-item companies-item_logo-gopro companies__companies-item"></li>
-          <li class="companies-item companies-item_logo-vive companies__companies-item"></li>
+          <li class="companies__companies-item"><a class="link companies-item companies-item_logo-dji" href="#"></a></li>
+          <li class="companies__companies-item"><a class="link companies-item companies-item_logo-gadgets" href="#"></a></li>
+          <li class="companies__companies-item"><a class="link companies-item companies-item_logo-gopro" href="#"></a></li>
+          <li class="companies__companies-item"><a class="link companies-item companies-item_logo-vive" href="#"></a></li>
         </ul>
       </section>
 
@@ -338,7 +336,7 @@
       <button class="button button_reset modal-close map__close-map" type="button"><span class="visually-hidden">Кнопка закрытия карты</span></button>
     </section>
 
-    <script src="js/write-to-us.js"></script>
-    <script src="js/map.js"></script>
+    <script src="js/write-to-us.min.js"></script>
+    <script src="js/map.min.js"></script>
   </body>
 </html>

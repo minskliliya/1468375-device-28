@@ -7,70 +7,75 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
-
     <header class="header header_catalog wrapper wrapper_indent page-body__header">   
       <p class="logo header__logo">
-        <a class="link logo__link" href="index.html">
+        <a class="link link_opacity logo__link" href="index.html">
           <img class="logo__img" src="img/logo.png" width="164" height="36" alt="Логотип Девайс">
         </a>
       </p>
 
       <div class="menu text_size_big header__menu">      
-        <form class="search menu__search" action="https://echo.htmlacademy.ru" method="get">
+        <form class="search text_uppercase menu__search" action="https://echo.htmlacademy.ru" method="get">
           <button class="button button_reset search__button" type="button"><span class="visually-hidden">Кнопка поиска по сайту</span></button>
-          <input class="input input_search search__input" type="search" value="Поиск по сайту">
+          <input class="input search-input" placeholder="Поиск по сайту">
+          <button class="button button_reset find-button search__find-button ">
+            <span class="find-button-span">найти</span>
+          </button>
         </form>
-        <div class="menu__button">
-          <a class="link menu__user-link" href="#">Валентик Петухов</a>
-          <a class="`link menu__user-link" type="button">Выйти</a>
-        </div> 
-        <div class="menu__compare"><a class="link menu__link" href="#">Сравнить</a></div>
-        <div class="menu__cart" ><a class="link menu__link" href="#">Корзина</a></div>
+        <div class="menu__button"><a class="link link_opacity login-link" type="button">Войти</a></div> 
+        <div class="menu__compare"><a class="link link_opacity compare-link" href="#">Сравнить</a></div>
+        <div class="menu__cart" ><a class="link link_opacity cart-link" href="#">Корзина</a></div>
       </div>
 
-      <nav class="navigation title_size_medium text_gilroy text_uppercase text_weight_bold header__nav">
+      <nav class="navigation title_size_medium text_gilroy text_weight_bold header__nav">
         <ul class="list title_size_medium nav-list-external navigation__nav-list-external">   
           <li> 
-            <a class="link navigation__link" href="catalog.html">каталог товаров</a>
-            <ul class="list text_size_big navigation__list navigation__list_inner">  
-              <li><a class="link navigation__link" href="#">Виртуальная реальность</a></li>         
-              <li><a class="link navigation__link" href="#">Моноподы для селфи</a></li>
-              <li><a class="link navigation__link" href="#">Экшн-камеры</a></li>
-              <li><a class="link navigation__link" href="#">Фитнес-браслеты</a></li>
-              <li><a class="link navigation__link" href="#">Умные часы</a></li>          
-              <li><a class="link navigation__link" href="#">Квадрокоптер</a></li>
+            <a class="link link_opacity catalog-link text_uppercase text_spacing_tiny catalog-link navigation__catalog-link" href="catalog.html">каталог товаров</a>
+            <ul class="list list_no_indent text_size_big text_weight_normal nav-list-inner navigation__nav-list-inner hidden-content">  
+              <li class="virtual-reality"><a class="link link_opacity navigation__link" href="catalog.html">Виртуальная реальность</a></li>         
+              <li class="monopods"><a class="link link_opacity navigation__link" href="catalog.html">Моноподы для селфи</a></li>
+              <li class="action-cameras"><a class="link link_opacity navigation__link" href="catalog.html">Экшн-камеры</a></li>
+              <li class="fitness-bracelets"><a class="link link_opacity navigation__link" href="catalog.html">Фитнес-браслеты</a></li>
+              <li class="smart-watch"><a class="link link_opacity navigation__link" href="catalog.html">Умные часы</a></li>          
+              <li class="quadcopter"><a class="link link_opacity navigation__link" href="catalog.html">Квадрокоптер</a></li> 
             </ul>           
           </li> 
-          <li><a class="link navigation__link" href="#">доставка</a></li>
-          <li><a class="link navigation__link" href="#">гаранития</a></li>
-          <li class="text_align_right"><a class="link navigation__link" href="#">контакты</a></li>
+          <li><a class="link link_opacity text_uppercase text_spacing_small navigation__link" href="#">доставка</a></li>
+          <li><a class="link link_opacity text_uppercase text_spacing_small navigation__link" href="#">гарантия</a></li>
+          <li class="text_align_right nav-list-external__contacts-menu"><a class="link link_opacity text_uppercase text_spacing_small navigation__link" href="#">контакты</a></li>
         </ul>         
       </nav>  
-    </header>  
+    </header> 
 
     <main class="container page-body__container">
-      <h1 class="title_size_huge text_gilroy wrapper wrapper_indent container__title">Моноподы для селфи</h1>        
+      <h1 class="title_size_huge text_gilroy wrapper wrapper_indent product-title container__product-title">Моноподы для селфи</h1>        
       
-      <ul class="list text_size_medium breadcrumbs wrapper wrapper_indent container__breadcrumbs">
-        <li class="list_item_inline"><a class="link breadcrumbs__link" href="index.html">Главная</a></li>
-        <li class="list_item_inline"><a class="link breadcrumbs__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="list_item_inline"><a class="link breadcrumbs__link" href="#">Моноподы для селфи</a></li>
+      <ul class="list text_size_medium breadcrumbs wrapper wrapper_indent">
+        <li class="list_item_inline breadcrumbs-item breadcrumbs__breadcrumbs-item">
+          <a class="link breadcrumbs-link breadcrumbs__breadcrumbs-link" href="index.html">Главная</a>
+        </li>
+        <li class="list_item_inline breadcrumbs-item breadcrumbs__breadcrumbs-item">
+          <a class="link breadcrumbs-link breadcrumbs__breadcrumbs-link" href="catalog.html">Каталог товаров</a>
+        </li>
+        <li class="list_item_inline breadcrumbs-item breadcrumbs-current">
+          Моноподы для селфи
+        </li>
       </ul>
       
       <div class="filter-gradient">
         <div class="wrapper wrapper-filter container__wrapper-filter">
-          <h2 class="title title_size_small text_gilroy text_uppercase">фильтр:</h2>        
-          <h2 class="title title_size_small list_item_inline text_gilroy text_uppercase wrapper-filter__sort">cортировка:</h2>
-          <ul class="list list_item_inline text_size_medium wrapper-filter__types">
-            <li class="list_item_inline wrapper-filter__item"><a class="link wrapper-filter__link" href="#">По цене</a></li>
-            <li class="list_item_inline wrapper-filter__item"><a class="link wrapper-filter__link" href="#">По типу</a></li>
-            <li class="list_item_inline wrapper-filter__item"><a class="link wrapper-filter__link" href="#">По популярности</a></li>
-            <li class="list_item_inline text_float_rigth">
+          <h2 class="title title_size_small text_gilroy text_spacing_tiny text_uppercase">фильтр:</h2>        
+          <h2 class="title title_size_small list_item_inline text_gilroy text_spacing_tiny text_uppercase filter-sort wrapper-filter__filter-sort">cортировка:</h2>
+          <ul class="list list_no_indent list_item_inline text_size_medium wrapper-filter__types">
+            <li class="list_item_inline types-current wrapper-filter__types-item"><a class="link wrapper-filter__link" href="#">По цене</a></li>
+            <li class="list_item_inline types-item wrapper-filter__types-item"><a class="link wrapper-filter__link" href="#">По типу</a></li>
+            <li class="list_item_inline types-item wrapper-filter__types-item"><a class="link wrapper-filter__link" href="#">По популярности</a></li>
+            <li class="list_item_inline text_float_rigth type-sort-current types-sort__sort-out">
               <a class="link wrapper-filter__link" href="#">
                 <img class="wrapper-filter__img" src="img/icon-down-dir.svg" width="10" height="11" alt="Сортировка по возрастанию">
               </a>
             </li>
-            <li class="list_item_inline text_float_rigth wrapper-filter__icon-up">
+            <li class="list_item_inline text_float_rigth types-item types-sort">
               <a class="link wrapper-filter__link" href="#">
                 <img class="wrapper-filter__img"src="img/icon-up-dir.svg" width="10" height="11" alt="Сортировка по убыванию">
               </a>
@@ -82,57 +87,64 @@
       <div class="content-catalog-gradient">
         <div class="wrapper content-catalog container__content-catalog">
           <section class="filter container__filter">
-            <form action="https://echo.htmlacademy.ru" method="get" class="form filter__form">
-              <fieldset class="fielsset fielsset_no_indent text_gilroy price-filter form__fieldset form__fieldset_price-filter">
-                <h3 class="price-filter__title">Стоимость</h3>
-                <div>
-                  <div></div>
-                  <button class="button_reset text text_gilroy price-filter__label" type="submit">от 0</button>
-                  <button class="button_reset text text_gilroy price-filter__label" type="submit">до 50000</button>
-                  <div></div>
-                  <input class="input price-filter__input" type="hidden" id="minValue" name="minValue" value="0">
-                  <input class="input price-filter__input" type="hidden" id="maxValue" name="maxValue" value="5000">
+            <form action="https://echo.htmlacademy.ru" method="get" class="filter-form filter__filter-form">
+              <fieldset class="fielsset fielsset_no_indent text_gilroy price-filter filter-form__price-filter">
+                <h3 class="text_gilroy text_spacing_tiny filter__filter-title-price">Стоимость</h3>
+                <div class="filter-price filter__filter-price">
+                  <div class="filter-scale filter__filter-scale">
+                    <div class="price-bar filter-price__price-bar"></div>
+                  </div>
+                  <div class="filter-toggle filter-toggle_min filter__filter-toggle"></div>
+                  <div class="filter-toggle filter-toggle_max filter__filter-toggle"></div>
                 </div>  
+                <button class="button_reset text text_gilroy price-filter__label-first" type="submit">от 0</button>
+                <button class="button_reset text text_gilroy" type="submit">до 5000</button>
+                <input class="input price-filter__input" type="hidden" id="minValue" name="minValue" value="0">
+                <input class="input price-filter__input" type="hidden" id="maxValue" name="maxValue" value="5000"> 
               </fieldset>  
-              <fieldset class="fielsset fielsset_no_indent color-filter form__fieldset form__fieldset_color-filter">
-                <h3 class="text_gilroy color-filter__title">Цвет</h3>
+              <fieldset class="fielsset fielsset_no_indent color-filter filter-form__color-filter">
+                <h3 class="text_gilroy text_spacing_tiny filter__filter-title-color">Цвет</h3>
                 <ul class="list list_no_indent text_size_medium color-filter__list">
-                  <li>
-                    <input class="input input_checkbox color-filter__input" type="checkbox" name="color" value="black" id="filter-black" checked>
-                    <label class="label color-filter__label" for="filter-black">Черный</label>
+                  <li class="filter-item filter__filter-item">
+                    <input class="visually-hidden filter-input-checkbox filter__filter-input-checkbox" type="checkbox" name="color" value="black" id="filter-black" checked>
+                    <label class="filter-label filter__filter-label" for="filter-black">Черный</label>
                   </li>
-                  <li>
-                    <input class="input input_checkbox color-filter__input" type="checkbox" name="color" value="white" id="filter-white">
-                    <label class="label color-filter__label" for="filter-white">Белый</label>
+                  <li class="filter-item filter__filter-item">
+                    <input class="visually-hidden filter-input-checkbox filter__filter-input-checkbox" type="checkbox" name="color" value="white" id="filter-white">
+                    <label class="filter-label filter__filter-label" for="filter-white">Белый</label>
                   </li>
-                  <li>
-                    <input class="input input_checkbox color-filter__input" type="checkbox" name="color" value="blue" id="filter-blue" checked>
-                    <label class="label color-filter__label" for="filter-blue">Синий</label>
+                  <li class="filter-item filter__filter-item">
+                    <input class="visually-hidden filter-input-checkbox filter__filter-input-checkbox" type="checkbox" name="color" value="blue" id="filter-blue" checked>
+                    <label class="filter-label filter__filter-label" for="filter-blue">Синий</label>
                   </li>
-                  <li>
-                    <input class="input input_checkbox color-filter__input" type="checkbox" name="color" value="red" id="filter-red" checked>
-                    <label class="label color-filter__label" for="filter-red">Красный</label>
+                  <li class="filter-item filter__filter-item">
+                    <input class="visually-hidden filter-input-checkbox filter__filter-input-checkbox" type="checkbox" name="color" value="red" id="filter-red" checked>
+                    <label class="filter-label filter__filter-label" for="filter-red">Красный</label>
                   </li>
-                  <li>
-                    <input class="input input_checkbox color-filter__input" type="checkbox" name="color" value="ping" id="filter-ping">
-                    <label class="label color-filter__label" for="filter-ping">Розовый</label>
+                  <li class="filter-item filter__filter-item">
+                    <input class="visually-hidden filter-input-checkbox filter__filter-input-checkbox" disabled checked type="checkbox" name="color" value="ping" id="filter-ping">
+                    <label class="filter-label filter__filter-label" for="filter-ping">Розовый</label>
                   </li>
                 </ul>
               </fieldset>
-              <fieldset class="fielsset fielsset_no_indent bluetooth-filter form__fieldset form__fieldset_filter-bluetooth">
-                <h3 class="text_gilroy bluetooth-filter__title">Bluetooth</h3>
+              <fieldset class="fielsset fielsset_no_indent bluetooth-filter fiter-form__filter-bluetooth">
+                <h3 class="text_gilroy text_spacing_tiny filter__filter-title-bluetooth">Bluetooth</h3>
                 <ul class="list list_no_indent text_size_medium bluetooth-filter__list">
-                  <li>
-                    <input class="input input_radio bluetooth-filter__input" type="radio" name="bluetooth" value="yes" id="filter-yes" checked>
-                    <label class="label bluetooth-filter__label" for="filter-yes">Есть</label>
+                  <li class="filter-item filter__filter-item">
+                    <input class="visually-hidden filter-input-radio filter__filter-input-radio" type="radio" name="bluetooth" value="yes" id="filter-yes" checked>
+                    <label class="filter-label filter__filter-label" for="filter-yes">Есть</label>
                   </li>
-                  <li>
-                    <input class="input input_radio bluetooth-filter__input" type="radio" name="bluetooth" value="no" id="filter-no">
-                    <label class="label bluetooth-filter__label" for="filter-no">Нет</label>
+                  <li class="filter-item filter__filter-item">
+                    <input class="visually-hidden filter-input-radio filter__filter-input-radio" type="radio" name="bluetooth" value="no" id="filter-no">
+                    <label class="filter-label filter__filter-label" for="filter-no">Нет</label>
                   </li>
                 </ul>
               </fieldset>
-              <p class="filter__show"><a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow filter__show_link" href="#">Показать</a></p>
+              <p class="title_size_medium filter__filter-show">
+                <button class="button button_reset link_yellow link_background filter-show-button filter__filter-show-button" type="submit" >
+                  <span class="link_opacity_span title_size_medium text_gilroy text_uppercase text_weight_bold">Показать</span>
+                </button>
+              </p>
             </form>
           </section>  
 
@@ -141,80 +153,101 @@
               <li>    
                 <article class="product products__article">
                   <h2 class="visually-hidden">Любительская селфи палка</h2>
-                  <img class="product__img" src="img/amatur-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">  
-                  <div class="product__description">     
+                  <p class="product-card product__product-card">
+                    <img class="product-img product__product-img" src="img/amatur-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
+                    <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
+                      <span class="link_opacity_span">В корзину</span>
+                    </a>
+                    <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
+                  </p> 
+                  <div class="description product__description">     
                     <p class="name-product description__name-product">
                       <a class="link title_size_medium text_weight_bold" href="#">     
-                        Любительская селфи палка 
+                        Любительская селфи-палка 
                       </a>
                     </p>
                     <span class="title_size_tiny text_weight_lighter text_align_right description__price">500 руб.</span>
-                  </div>
-                  <a class="link hidden-content title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-                  <a class="link hidden-content link_small text_open_sans product__link" href="#">Добавить к сравнению</a>
+                  </div>                  
                 </article>  
               </li>
-              <li>             
+              <li>           
                 <article class="product products__article">
                   <h2 class="visually-hidden">Профессиональная селфи-палка</h2>
-                  <img class="product__img" src="img/prof-selfy-stick.png" width="360" height="380" alt="Профессиональная селфи-палка">  
-                  <div class="product__description">     
+                  <p class="product-card product__product-card">
+                    <img class="product-img product__product-img" src="img/prof-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
+                    <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
+                      <span class="link_opacity_span">В корзину</span>
+                    </a>
+                    <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
+                  </p> 
+                  <div class="description product__description">     
                     <p class="name-product description__name-product">
                       <a class="link title_size_medium text_weight_bold" href="#">     
-                        Профессиональная селфи-палка 
+                        Профессиональная<br> селфи-палка  
                       </a>
                     </p>
                     <span class="title_size_tiny text_weight_lighter text_align_right description__price">1500 руб.</span>
-                  </div>     
-                  <a class="link hidden-content title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-                  <a class="link hidden-content text_size_small text_open_sans product__link" href="#">Добавить к сравнению</a>
-                </article>             
+                  </div>                  
+                </article>            
               </li>
               <li>   
-                <article class="product products__article"> 
-                  <h2 class="visually-hidden">Непотовляемая селфи-палка</h2> 
-                  <img class="product__img" src="img/unsinkable-selfy-stick.png" width="360" height="380" alt="Непотовляемая селфи-палка">       
-                  <div class="product__description">     
+                <article class="product products__article">
+                  <h2 class="visually-hidden">Непотовляемая селфи-палка</h2>
+                  <p class="product-card product__product-card">
+                    <img class="product-img product__product-img" src="img/unsinkable-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
+                    <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
+                      <span class="link_opacity_span">В корзину</span>
+                    </a>
+                    <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
+                  </p> 
+                  <div class="description product__description">     
                     <p class="name-product description__name-product">
                       <a class="link title_size_medium text_weight_bold" href="#">     
                         Непотовляемая селфи-палка
                       </a>
                     </p>
                     <span class="title_size_tiny text_weight_lighter text_align_right description__price">2500 руб.</span>
-                  </div>
-                  <a class="link hidden-content title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-                  <a class="link hidden-content text_size_small text_open_sans product__link" href="#">Добавить к сравнению</a>
-                </article>   
+                  </div>                  
+                </article>
               </li>
               <li>  
                 <article class="product products__article">
-                  <h2 class="visually-hidden">Селфи-палка "Следуй за мной"</h2>  
-                  <img class="new hidden-content product__new" src="img/new.svg" alt="Новый товар"> 
-                  <img class="product__img" src="img/go-selfy-stick.png" width="360" height="380" alt="Селфи-палка 'Следуй за мной'">  
-                  <div class="product__description">     
+                  <h2 class="visually-hidden">Селфи-палка "Следуй за мной"</h2>
+                   
+                  <p class="product-card product__product-card">
+                    <img class="new product__new" src="img/new.svg" alt="Новый товар">
+                    <img class="product-img product__product-img" src="img/go-selfy-stick.png" width="360" height="380" alt="Любительская селфи палка">
+                    <a class="link title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow link_background product-buy product__product-buy" href="#">
+                      <span class="link_opacity_span">В корзину</span>
+                    </a>
+                    <a class="link link_small text_open_sans text_spacing_tiny product-add-card product__product-add-card" href="#">Добавить к сравнению</a>
+                  </p> 
+                  <div class="description product__description">     
                     <p class="name-product description__name-product">
                       <a class="link title_size_medium text_weight_bold" href="#">     
                         Селфи-палка "Следуй за мной"
                       </a>
                     </p>
                     <span class="title_size_tiny text_weight_lighter text_align_right description__price">4900 руб.</span>
-                  </div>     
-                  <a class="link hidden-content title_size_medium text_gilroy text_uppercase text_weight_bold link_yellow product__link" href="#">В корзину</a>
-                  <a class="link hidden-content text_size_small text_open_sans product__link" href="#">Добавить к сравнению</a>
-                </article>   
+                  </div>                  
+                </article>              
               </li>         
             </ul>  
 
             <div class="pagination title_size_small text_gilroy text_weight_bold text_uppercase products__pagination">
-              <button class="button button_reset title_size_small text_gilroy text_weight_bold text_uppercase pagination__back" type="button">назад</button>
+              <button class="button button_reset text_spacing_tiny pagination-button pagination__pagination-button" type="button">
+                назад
+              </button>
 
               <ul class="list list_no_indent text_align_center pagination__list">
-                <li class="list list_item_inline"><a class="link pagination__link" href="#"><span class="visually-hidden">Переход на страницу - </span>1</a></li>
-                <li class="list list_item_inline"><a class="link pagination__link" href="#"><span class="visually-hidden">Переход на страницу - </span>2</a></li>
-                <li class="list_item_inline"><a class="link pagination__link" href="#"><span class="visually-hidden">Переход на страницу - </span>3</a></li>
+                <li class="list list_item_inline"><a class="link pagination-switch pagination-switch-current pagination__pagination-switch" href="#"><span class="visually-hidden">Переход на страницу - </span>1</a></li>
+                <li class="list list_item_inline"><a class="link pagination-switch pagination__pagination-switch" href="#"><span class="visually-hidden">Переход на страницу - </span>2</a></li>
+                <li class="list list_item_inline"><a class="link pagination-switch pagination__pagination-switch" href="#"><span class="visually-hidden">Переход на страницу - </span>3</a></li>
               </ul>
 
-              <button class="button button_reset title_size_small text_gilroy text_weight_bold text_uppercase pagination__forward" type="button">вперед</button>
+              <button class="button button_reset text_spacing_tiny pagination-button pagination__pagination-button" type="button">
+                вперед
+              </button>
             </div>  
           </section>     
         </div>  
@@ -223,26 +256,36 @@
 
     <footer class="footer page-body__footer">       
       <div class="wrapper_indent footer__section">
-        <div class="text_size_big menu-footer footer__menu-footer">    
+        <div class="text_size_big menu-footer footer__menu-footer">   
           <div>
-            <a class="link link_color_white menu__user-link menu-footer__link" href="#">Валентик Петухов</a>  
-            <a class="link link_color_white menu-footer__link" type="button">Выйти</a>
-          </div>               
-          <div><a class="link link_color_white menu-footer__link" href="#">Сравнить</a></div>
-          <div><a class="link link_color_white menu-footer__link" href="#">Корзина</a></div>
+            <a class="link link_color_white login-link-footer user-link menu-footer__link" type="button">
+              <span class="menu-footer-span">Валентик Петухов</span>              
+            </a>
+            <a class="link link_color_white user-link menu-footer__link" type="button"><span class="menu-footer-span">Выйти</span></a>
+          </div>             
+          <div>
+            <a class="link link_color_white compare-link-footer menu-footer__link" href="#">
+              <span class="menu-footer-span">Сравнить</span>
+            </a>
+          </div>
+          <div>
+            <a class="link link_color_white cart-link-footer menu-footer__link" href="#">
+              <span class="menu-footer-span">Корзина</span>
+            </a>
+          </div>
         </div>
 
         <p class="logo-footer footer__logo-footer">
-          <a class="link logo-footer__link" href="index.html"><img class="logo-footer__img" src="img/logo-yellow.png" width="164" height="36" alt="Логотип Девайс"></a>
+          <a class="link link_opacity logo-footer__link" href="index.html"><img class="logo-footer__img" src="img/logo-yellow.png" width="164" height="36" alt="Логотип Девайс"></a>
         </p> 
         
         <div class="contacts footer__contacts">
-          <address class="text_size_big text_color_white address__contacts">г.Москваб ул.Строителей, 15</address>
+          <address class="text_size_big text_color_white address contacts__address">г.Москваб ул.Строителей, 15</address>
           
           <ul class="list title_size_medium text_gilroy text_uppercase text_weight_bold navigation-footer contacts__navigation-footer">
-            <li><a class="link link_color_white navigation-footer__link" href="#">доставка</a></li>
-            <li><a class="link link_color_white navigation-footer__link" href="#">гаранития</a></li>
-            <li><a class="link link_color_white navigation-footer__link" href="#">контакты</a></li>
+            <li><a class="link link_opacity link_color_white text_spacing_small navigation-footer__link" href="#">доставка</a></li>
+            <li><a class="link link_opacity link_color_white text_spacing_small navigation-footer__link" href="#">гарантия</a></li>
+            <li><a class="link link_opacity link_color_white text_spacing_small navigation-footer__link" href="#">контакты</a></li>
           </ul>
 
           <p class="phone text_align_right contacts__phone">
@@ -257,14 +300,13 @@
             <li class="socials-item socials-item_twitter socials__social-item"><a class="link socials__link" href="#"><span class="visually-hidden">Твиттер</span></a></li>
           </ul>
           <p class="htmlacademy text_align_right other-links__htmlacademy">
-            <a class="link htmlacademy__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <a class="link link_opacity htmlacademy__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
               <img class="htmlacademy__img" src="img/logo-html.svg" width="27" height="36" alt="Логотип htmlacademy">
             </a>
           </p>
         </div>
       </div>
     </footer>
-
 
   </body>
 </html>
